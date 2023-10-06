@@ -2,6 +2,8 @@
 title: Logo
 sidebar_position: 2
 displayed_sidebar: main
+pagination_next: 'visual-language/typography'
+pagination_prev: 'visual-language/index'
 ---
 
 # Brand Marks

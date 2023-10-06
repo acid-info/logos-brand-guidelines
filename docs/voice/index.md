@@ -1,7 +1,8 @@
 ---
 title: Overview
-sidebar_position: 1
 displayed_sidebar: main
+pagination_next: 'visual-language/index'
+pagination_prev: 'philosophy/principles'
 ---
 
 # Voice: Mode of Presentation

@@ -2,6 +2,8 @@
 title: Color
 sidebar_position: 3
 displayed_sidebar: main
+pagination_next: 'visual-language/grid-and-layout'
+pagination_prev: 'visual-language/typography'
 ---
 
 # Color

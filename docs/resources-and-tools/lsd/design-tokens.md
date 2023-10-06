@@ -1,7 +1,8 @@
 ---
 title: Design tokens
-sidebar_position: 2
 displayed_sidebar: main
+pagination_next: 'resources-and-tools/presentation-kits'
+pagination_prev: 'resources-and-tools/lsd/index'
 ---
 
 # **Design tokens**

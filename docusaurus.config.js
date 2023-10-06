@@ -33,9 +33,6 @@ const config = {
           name: 'default',
           options: {
             customCss: [require.resolve('./src/css/custom.scss')],
-            typography: {
-              genericFontFamily: "monospace",
-            },
             docs: {
               default: {
                 sidebar: {

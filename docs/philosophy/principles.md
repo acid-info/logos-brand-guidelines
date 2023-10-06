@@ -1,6 +1,8 @@
 ---
 title: Principles
-sidebar_position: 2
+displayed_sidebar: main
+pagination_next:  'voice/index'
+pagination_prev: 'philosophy/overview'
 ---
 
 # Principles

@@ -1,6 +1,8 @@
 ---
 title: Overview
-sidebar_position: 1
+displayed_sidebar: main
+pagination_next: 'philosophy/principles'
+pagination_prev: 'index'
 ---
 
 # Overview

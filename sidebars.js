@@ -19,16 +19,31 @@ const sidebars = {
   // But you can create a sidebar manually
   main: [
     'index',
+    // {
+    //   type: 'html',
+    //   value: '<div class="sidebar-menu-divider">Philosophy</div>', // The HTML to be rendered
+    //   defaultStyle: true, // Use the default menu item styling
+    // },
     {
-      type: 'html',
-      value: '<div class="sidebar-menu-section">Philosophy</div>', // The HTML to be rendered
-      defaultStyle: true, // Use the default menu item styling
+      type: 'category',
+      label: 'Philosophy',
+      collapsible: true,
+      items: [
+        {
+          type: 'link',
+          label: 'Overview',
+          href: '/philosophy/overview',
+        },
+        {
+          type: 'link',
+          label: 'Principles',
+          href: '/philosophy/principles',
+        },
+      ],
     },
-    'philosophy/overview',
-    'philosophy/principles',
     {
       type: 'html',
-      value: '<div class="sidebar-menu-section">Brand Guidelines</div>',
+      value: '<div class="sidebar-menu-divider"></div>',
       defaultStyle: true,
     },
     {
@@ -71,41 +86,41 @@ const sidebars = {
         {
           type: 'link',
           label: 'Grid & Layout',
-          href: '/visual-language/grand-and-layout',
+          href: '/visual-language/grid-and-layout',
         },
       ],
     },
     {
       type: 'html',
-      value: '<div class="sidebar-menu-section">Resources & Tools</div>',
+      value: '<div class="sidebar-menu-divider"></div>',
       defaultStyle: true,
     },
-    'resources-and-tools/index',
     {
       type: 'category',
-      label: 'LSD - UI library',
+      label: 'Resources & Tools',
       collapsible: true,
       items: [
         {
-          type: 'link',
-          label: 'Overview',
-          href: '/resources-and-tools/lsd',
+          type: 'category',
+          label: 'LSD - UI Library',
+          collapsible: true,
+          items: [
+            {
+              type: 'link',
+              label: 'Overview',
+              href: '/resources-and-tools/lsd',
+            },
+            {
+              type: 'link',
+              label: 'Design tokens',
+              href: '/resources-and-tools/lsd/design-tokens',
+            },
+          ],
         },
-        {
-          type: 'link',
-          label: 'Design tokens',
-          href: '/resources-and-tools/lsd/design-tokens',
-        },
+        'resources-and-tools/presentation-kits',
+        'resources-and-tools/gallery',
       ],
     },
-    'resources-and-tools/presentation-kits',
-    'resources-and-tools/logos-docusaurus-framework',
-    {
-      type: 'html',
-      value: '<div class="sidebar-menu-section">Gallery</div>',
-      defaultStyle: true,
-    },
-    'gallery/index',
   ],
 }
 

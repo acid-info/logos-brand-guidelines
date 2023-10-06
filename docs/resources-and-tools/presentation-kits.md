@@ -1,6 +1,7 @@
 ---
 title: Presentation kits
-sidebar_position: 3
+displayed_sidebar: main
+pagination_prev: 'resources-and-tools/lsd/design-tokens'
 ---
 
 # Presentation kits

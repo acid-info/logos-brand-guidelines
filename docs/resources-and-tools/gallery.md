@@ -1,6 +1,6 @@
 ---
-title: Overview
-sidebar_position: 1
+title: Gallery
+displayed_sidebar: main
 ---
 
 
