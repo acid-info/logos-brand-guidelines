@@ -8,7 +8,9 @@ const config = {
   url: 'https://logos.co/',
   baseUrl: '/',
 
-  customFields: {},
+  customFields: {
+    storybookUrl: process.env.STORYBOOK_URL,
+  },
 
   markdown: {
     mermaid: true,
@@ -44,7 +46,7 @@ const config = {
         },
         docs: {
           routeBasePath: '/',
-          sidebarPath: require.resolve("./sidebars.js"),
+          sidebarPath: require.resolve('./sidebars.js'),
         },
         og: {},
       }),

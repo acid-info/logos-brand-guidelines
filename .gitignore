@@ -26,3 +26,5 @@ yalc.lock
 static/search-index.json
  
 notionExportedFiles/*/
+
+data/
