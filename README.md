@@ -1,17 +1,11 @@
-# Logos Docs Template
-
-The template repository for docs using [logos-docusaurus-plugins](https://github.com/acid-info/logos-docusaurus-plugins).
-
-
-## Use Cases
-- [Codex docs](https://docs.codex.storage/)
+# Logos Brand Guidelines
 
 
 ## How to Run Locally
 
 1. Clone this repository
 ```bash
-$ git clone https://github.com/acid-info/logos-docs-template.git
+$ git clone https://github.com/acid-info/logos-brand-guidelines.git
 ```
 
 2. Install the dependencies:

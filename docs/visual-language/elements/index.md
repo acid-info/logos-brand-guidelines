@@ -1,11 +1,11 @@
 ---
 title: Elements
-sidebar_position: 2
+sidebar_position: 1
 ---
 
 | Name               | Status      | placeholder-2022 | V0 (q1 2023) | V1 (q2-3 2023) |
 |--------------------|-------------|------------------|--------------|----------------|
-| Logo               | In progress | Yes              | Yes          | Yes            |
+| [Logo](/visual-language/elements/logo)               | In progress | Yes              | Yes          | Yes            |
 | Typography         | In progress | No               | Yes          | Yes            |
 | Color              | Done        | No               | Yes          | Yes            |
 | Grid               | In progress | No               | Yes          | Yes            |
