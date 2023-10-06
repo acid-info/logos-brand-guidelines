@@ -4,8 +4,8 @@ require('dotenv').config()
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Codex',
-  url: 'https://docs.codex.storage/',
+  title: 'Logos',
+  url: 'https://logos.co/',
   baseUrl: '/',
 
   customFields: {},
@@ -27,7 +27,7 @@ const config = {
       '@acid-info/logos-docusaurus-preset',
       /** @type {import('@acid-info/logos-docusaurus-preset').PluginOptions} */
       ({
-        businessUnit: 'Codex',
+        businessUnit: 'Logos',
         theme: {
           name: 'default',
           options: {
@@ -61,7 +61,6 @@ const config = {
         ],
       },
       footer: {
-        copyright: 'Codex @2023<br/>All Rights Reserved.',
         links: [
           {
             items: [
