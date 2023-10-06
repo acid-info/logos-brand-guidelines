@@ -28,6 +28,7 @@ const config = {
       /** @type {import('@acid-info/logos-docusaurus-preset').PluginOptions} */
       ({
         businessUnit: 'Logos',
+        customSiteConfig: true,
         theme: {
           name: 'default',
           options: {
@@ -46,6 +47,7 @@ const config = {
         },
         docs: {
           routeBasePath: '/',
+          sidebarPath: require.resolve("./sidebars.js"),
         },
         og: {},
       }),

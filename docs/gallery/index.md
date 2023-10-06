@@ -1,5 +1,5 @@
 ---
-title: Gallery
+title: Overview
 sidebar_position: 1
 ---
 

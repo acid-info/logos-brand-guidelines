@@ -1,7 +1,9 @@
 ---
-title: Design systems
-sidebar_position: 3
+title: Overview
+sidebar_position: 1
 ---
+
+# Overview
 
 Each of our design system is an open source ecosystem for creating high-quality products and digital experiences. At its core is the **[Logos Brand Guidelines - Master](https://www.notion.so/Logos-Brand-Guidelines-Master-2d65ca6f71684f41b2223bd690c2bc30?pvs=21)**, which provides the foundation for a system of working code, design tools and resources, human interface guidelines, and a community of contributors.
 
