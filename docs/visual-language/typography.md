@@ -101,26 +101,28 @@ By following these typography specifications, we ensure that our designs are con
 
 PNG
 
-![sans.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/1518abd9-c08f-4989-93c1-96525e62bce5/0ca9b8e2-0a9e-4d3c-b1ed-6ea9b82c0ed0/sans.png)
+![sans.png](/sans.png)
 
 SVG
 
-![sans.svg](https://prod-files-secure.s3.us-west-2.amazonaws.com/1518abd9-c08f-4989-93c1-96525e62bce5/eeec47dd-6829-4645-92c6-8f1641c3579c/sans.svg)
+![sans.svg](/sans.svg)
 
 ### Serif
 
 PNG
 
-![serif.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/1518abd9-c08f-4989-93c1-96525e62bce5/c1f77059-2f60-40b5-93d7-ed42b7c895e5/serif.png)
+![serif.png](/serif.png)
 
 SVG
 
-![serif .svg](https://prod-files-secure.s3.us-west-2.amazonaws.com/1518abd9-c08f-4989-93c1-96525e62bce5/054cfc0e-b27c-4a27-b271-192f07ff9781/serif_.svg)
+![serif .svg](/serif_.svg)
 
 ## Mono
 
 PNG
 
-![mono.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/1518abd9-c08f-4989-93c1-96525e62bce5/f8817471-7496-401f-8e61-e88ea59ea8de/mono.png)
+![mono.png](/mono.png)
 
 SVG
+
+![mono.svg](/mono.svg)
