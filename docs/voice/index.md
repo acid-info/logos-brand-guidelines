@@ -1,6 +1,7 @@
 ---
-title: Voice
+title: Overview
 sidebar_position: 1
+displayed_sidebar: main
 ---
 
 # Voice: Mode of Presentation

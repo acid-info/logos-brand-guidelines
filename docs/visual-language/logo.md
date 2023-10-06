@@ -1,6 +1,7 @@
 ---
 title: Logo
 sidebar_position: 2
+displayed_sidebar: main
 ---
 
 # Brand Marks

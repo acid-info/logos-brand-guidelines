@@ -1,6 +1,7 @@
 ---
 title: Overview
 sidebar_position: 1
+displayed_sidebar: main
 ---
 
 ## Logos System Design (LSD)

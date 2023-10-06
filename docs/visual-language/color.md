@@ -1,6 +1,7 @@
 ---
 title: Color
 sidebar_position: 3
+displayed_sidebar: main
 ---
 
 # Color

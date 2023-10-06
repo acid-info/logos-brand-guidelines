@@ -1,6 +1,7 @@
 ---
 title: Design tokens
 sidebar_position: 2
+displayed_sidebar: main
 ---
 
 # **Design tokens**

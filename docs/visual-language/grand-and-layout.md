@@ -1,6 +1,7 @@
 ---
 title: Grid & Layout
 sidebar_position: 5
+displayed_sidebar: main
 ---
 
 # Grid & Layout
