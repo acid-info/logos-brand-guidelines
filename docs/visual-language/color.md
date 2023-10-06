@@ -32,12 +32,12 @@ We also believe in the importance of accessibility and ensuring that our designs
 
 In summary, our approach to color is rooted in our core values of simplicity, functionality, and accessibility. We rely on default color systems to ensure consistency and accessibility, and we use color purposefully to complement our typography and other visual elements.
 
-[Primary Palette](https://www.notion.so/8b15323df0d84a7c9ee520ecbcf38930?pvs=21)
+[Primary Palette](https://www.notion.so/8b15323df0d84a7c9ee520ecbcf38930)
 
 PNG
 
-![color.png](https://prod-files-secure.s3.us-west-2.amazonaws.com/1518abd9-c08f-4989-93c1-96525e62bce5/276ad339-3dfe-4ff5-b979-654533b5c198/color.png)
+![color.png](/color.png)
 
 SVG
 
-![color.svg](https://prod-files-secure.s3.us-west-2.amazonaws.com/1518abd9-c08f-4989-93c1-96525e62bce5/922a052a-1963-41a0-8bfc-2cafc0213fbd/color.svg)
+![color.svg](/color.svg)
