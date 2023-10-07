@@ -5,7 +5,7 @@ displayed_sidebar: main
 
 # Gallery
 
-[Sizzle Reel draft.mp4](Gallery%20e5522cb5bfc94082adac41f1ab17a673/Sizzle_Reel_draft.mp4)
+[Sizzle Reel draft.mp4](/)
 
 ![1920.png](/1920.png)
 
@@ -27,7 +27,7 @@ displayed_sidebar: main
 
 ![logos-preview-twitter.png](/logos-preview-twitter.png)
 
-[logoslos.md](Gallery%20e5522cb5bfc94082adac41f1ab17a673/logoslos.md)
+[logoslos.md](/)
 
 ![nomos-1920.png](/nomos-1920.png)
 
