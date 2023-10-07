@@ -1,6 +1,7 @@
 ---
 title: Overview
 displayed_sidebar: main
+pagination_label: Philosophy
 pagination_next: 'philosophy/principles'
 pagination_prev: 'index'
 ---

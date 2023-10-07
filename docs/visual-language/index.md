@@ -2,8 +2,6 @@
 title: Visual Language
 sidebar_position: 1
 displayed_sidebar: main
-pagination_next: 'visual-language/logo'
-pagination_prev: 'voice/index'
 ---
 
 # Overview

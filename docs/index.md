@@ -1,7 +1,6 @@
 ---
 title: Brand Guidelines
 displayed_sidebar: main
-pagination_next: 'philosophy/overview'
 ---
 
 # Brand guidelines

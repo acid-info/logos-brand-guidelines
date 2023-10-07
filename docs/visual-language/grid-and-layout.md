@@ -2,8 +2,6 @@
 title: Grid & Layout
 sidebar_position: 5
 displayed_sidebar: main
-pagination_next: 'resources-and-tools/lsd/index'
-pagination_prev: 'visual-language/logo'
 ---
 
 # Grid & Layout

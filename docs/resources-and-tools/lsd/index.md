@@ -1,6 +1,7 @@
 ---
 title: Overview
 displayed_sidebar: main
+pagination_label: LSD - UI Library
 pagination_next: 'resources-and-tools/lsd/design-tokens'
 pagination_prev: 'visual-language/grid-and-layout'
 ---

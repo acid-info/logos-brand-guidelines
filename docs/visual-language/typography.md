@@ -2,8 +2,6 @@
 title: Typography
 sidebar_position: 2
 displayed_sidebar: main
-pagination_next: 'visual-language/color'
-pagination_prev: 'visual-language/logo'
 ---
 
 # Typography

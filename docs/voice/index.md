@@ -1,8 +1,7 @@
 ---
 title: Overview
 displayed_sidebar: main
-pagination_next: 'visual-language/index'
-pagination_prev: 'philosophy/principles'
+pagination_label: Voice
 ---
 
 # Overview
