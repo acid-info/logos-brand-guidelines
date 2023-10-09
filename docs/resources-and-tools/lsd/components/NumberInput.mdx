@@ -1,0 +1,62 @@
+import { StorybookDemo } from '@site/src/components/mdx/StorybookDemo';
+
+# NumberInput
+## Preview
+<StorybookDemo name="NumberInput" storybookUrl="https://63e4f71c39dc65c5c703c1e8-okbpyopeex.chromatic.com/" storyId="numberinput--root" globalTypes={{
+  "themeColor": {
+    "name": "Theme Color",
+    "description": "Theme Color",
+    "defaultValue": "Light",
+    "toolbar": {
+      "title": " Theme Color",
+      "icon": "circlehollow",
+      "items": [
+        {
+          "title": "Light",
+          "value": "Light",
+          "icon": "circlehollow"
+        },
+        {
+          "title": "Dark",
+          "value": "Dark",
+          "icon": "circle"
+        }
+      ]
+    }
+  },
+  "themeFont": {
+    "name": "Theme Font",
+    "description": "Theme Font",
+    "defaultValue": "monospace",
+    "toolbar": {
+      "title": " Theme Font",
+      "items": [
+        {
+          "title": "monospace",
+          "value": "monospace"
+        },
+        {
+          "title": "sans-serif",
+          "value": "sans-serif"
+        },
+        {
+          "title": "serif",
+          "value": "serif"
+        }
+      ]
+    }
+  }
+}} componentProperties={[
+  {
+    "name": "size",
+    "type": {
+      "name": "enum",
+      "value": [
+        "small",
+        "medium",
+        "large"
+      ]
+    },
+    "defaultValue": "large"
+  }
+]} />
