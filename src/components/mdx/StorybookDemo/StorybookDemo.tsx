@@ -130,20 +130,8 @@ export const StorybookDemo: React.FC<StorybookDemoProps> = ({
           />
         ))}
       </div>
-      <div
-        style={{
-          width: '100%',
-          marginTop: '8px',
-        }}
-      >
-        <iframe
-          ref={iframeRef}
-          src={embedUrl}
-          style={{
-            width: '100%',
-            height: 400,
-          }}
-        />
+      <div className={styles.iframeContainer}>
+        <iframe ref={iframeRef} src={embedUrl} />
       </div>
     </div>
   )
