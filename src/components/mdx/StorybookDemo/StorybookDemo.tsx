@@ -1,9 +1,8 @@
-import { useColorMode } from '@docusaurus/theme-common'
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext'
-import React, { useMemo, useRef, useState } from 'react'
 import { Dropdown } from '@acid-info/lsd-react'
-import styles from './StoryBookDemo.module.scss'
+import { useColorMode } from '@docusaurus/theme-common'
 import clsx from 'clsx'
+import React, { useMemo, useRef, useState } from 'react'
+import styles from './StoryBookDemo.module.scss'
 
 type GlobalType = {
   name: string
@@ -14,31 +13,38 @@ type GlobalType = {
     items: { title: string; value: string }[]
   }
 }
-type StorybookMetadata = {
-  components: any[]
-  globalTypes: Record<string, GlobalType>
-}
 
-const metadata: StorybookMetadata = require('@site/data/storybook.metadata.json')
-const GLOBAL_PROPS = metadata.globalTypes || {}
+type ComponentProperty = {
+  name: string
+  type: {
+    name: 'enum'
+    value: string[]
+  }
+  defaultValue?: string
+}
 
 export type StorybookDemoProps = {
   name: string
+  storyId: string
+  storybookUrl: string
+  globalTypes: Record<string, GlobalType>
+  componentProperties: ComponentProperty[]
 }
 
-export const StorybookDemo: React.FC<StorybookDemoProps> = ({ name }) => {
-  const {
-    siteConfig: {
-      customFields: { storybookUrl = 'http://localhost:6006' },
-    },
-  } = useDocusaurusContext()
+export const StorybookDemo: React.FC<StorybookDemoProps> = ({
+  name,
+  storyId,
+  storybookUrl,
+  globalTypes,
+  componentProperties = [],
+}) => {
   const colorMode = useColorMode()
 
   const iframeRef = useRef<HTMLIFrameElement>(null)
 
   const [globalProps, setGlobalProps] = useState(
     Object.fromEntries(
-      Object.entries(GLOBAL_PROPS).map(([name, prop]) => [
+      Object.entries(globalTypes).map(([name, prop]) => [
         name,
         name === 'themeColor'
           ? colorMode.colorMode.slice(0, 1).toUpperCase() +
@@ -48,19 +54,11 @@ export const StorybookDemo: React.FC<StorybookDemoProps> = ({ name }) => {
     ),
   )
 
-  const details = useMemo(() => {
-    const component = metadata.components.find(comp => comp.name === name)
-    const story =
-      component.stories.find(story => story.name === 'Root') ||
-      component.stories[0]
-    const url = new URL(`?path=${story.id}`, storybookUrl as string)
-
-    return {
-      story,
-      component,
-      url: url.toString(),
-    }
-  }, [name])
+  const [props, setProps] = useState(
+    Object.fromEntries(
+      componentProperties.map(prop => [prop.name, prop.defaultValue]),
+    ),
+  )
 
   const embedUrl = useMemo(() => {
     const el = iframeRef.current
@@ -69,11 +67,18 @@ export const StorybookDemo: React.FC<StorybookDemoProps> = ({ name }) => {
       ? new URL(el.src)
       : new URL('/iframe.html', storybookUrl as string)
 
-    url.searchParams.set('id', details.story.id)
+    url.searchParams.set('id', storyId)
     url.searchParams.set('viewMode', 'story')
     url.searchParams.set(
       'globals',
       Object.entries(globalProps)
+        .map(([name, value]) => `${name}:${value}`)
+        .join(';') + ';',
+    )
+
+    url.searchParams.set(
+      'args',
+      Object.entries(props)
         .map(([name, value]) => `${name}:${value}`)
         .join(';') + ';',
     )
@@ -83,7 +88,7 @@ export const StorybookDemo: React.FC<StorybookDemoProps> = ({ name }) => {
     url.searchParams.set('singleStory', 'true')
 
     return url.toString()
-  }, [details, globalProps])
+  }, [storyId, globalProps, props])
 
   return (
     <div className={clsx(styles.root, styles[globalProps.themeColor])}>
@@ -94,7 +99,7 @@ export const StorybookDemo: React.FC<StorybookDemoProps> = ({ name }) => {
           gap: '0 8px',
         }}
       >
-        {Object.entries(GLOBAL_PROPS).map(([name, prop]) => (
+        {Object.entries(globalTypes).map(([name, prop]) => (
           <Dropdown
             key={name}
             value={globalProps[name]}
@@ -104,6 +109,21 @@ export const StorybookDemo: React.FC<StorybookDemoProps> = ({ name }) => {
             options={prop.toolbar.items.map(i => ({
               name: i.title,
               value: i.value,
+            }))}
+            triggerLabel={prop.name}
+            label={prop.name}
+          />
+        ))}
+        {componentProperties.map(prop => (
+          <Dropdown
+            key={prop.name}
+            value={props[prop.name]}
+            onChange={value =>
+              setProps(state => ({ ...state, [prop.name]: value as string }))
+            }
+            options={prop.type.value.map(i => ({
+              name: i,
+              value: i,
             }))}
             triggerLabel={prop.name}
             label={prop.name}
@@ -121,6 +141,7 @@ export const StorybookDemo: React.FC<StorybookDemoProps> = ({ name }) => {
           src={embedUrl}
           style={{
             width: '100%',
+            height: 400,
           }}
         />
       </div>
