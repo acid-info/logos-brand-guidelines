@@ -77,6 +77,19 @@ const iterateThroughFolder = (
   return result
 }
 
+const isImage = (name: string) => {
+  const IMAGE_EXTENSIONS = ['.png', '.jpg', '.jpeg', '.gif', '.svg']
+
+  return IMAGE_EXTENSIONS.includes(path.extname(name))
+}
+
+const processImageName = (fileName: string): string => {
+  // Replace white spaces with dashes.
+  fileName = fileName.replace(/\s+/g, '-')
+
+  return fileName
+}
+
 const processLinks = (notionContent: string): string => {
   // Replace .csv links with a link to the Notion page.
   const csvLinkReplacer = (match: string, linkText: string, csvId: string) => {
@@ -89,7 +102,7 @@ const processLinks = (notionContent: string): string => {
     altText: string,
     imageName: string,
   ) => {
-    return `![${altText}](${imageName.replace('%20', ' ')})`
+    return `![${altText}](${imageName.replace('%20', '-')})`
   }
 
   // Process the csv links
@@ -128,12 +141,12 @@ const updateDocusaurusFileWithNotionContent = (
   fs.writeFileSync(docusaurusFilePath, updatedContent)
 }
 
-const IMAGE_EXTENSIONS = ['.png', '.jpg', '.jpeg', '.gif', '.svg']
-
 const moveImagesToStatic = (entry: EntryInfo) => {
   const filePath = path.join(notionFolder, entry.relativePath)
 
-  if (IMAGE_EXTENSIONS.includes(path.extname(entry.name))) {
+  if (isImage(entry.name)) {
+    entry.name = processImageName(entry.name)
+
     const destinationFolder = './static'
     const destinationPath = path.join(
       destinationFolder,
@@ -207,15 +220,22 @@ const mapNotionIdToDocusaurusPage = (notionId: string): string | undefined => {
   //
   //// Main script:
 ;(async () => {
+  console.log('Starting script...')
+
   const entryInfos = iterateThroughFolder(notionFolder)
+  console.log('Iterated through the Notion folder.')
 
   // First, move all images to the static folder
   for (const entry of entryInfos) {
     moveImagesToStatic(entry)
   }
+  console.log(
+    'Moved all images from the notion folder to the docusaurus static folder.',
+  )
 
   // Now, filter entries that have a corresponding Docusaurus page and update them
   const withDocusaurusPage = entryInfos.filter(entry => entry.docusaurusPage)
+
   for (const entry of withDocusaurusPage) {
     if (entry.docusaurusPage && entry.content) {
       updateDocusaurusFileWithNotionContent(
@@ -224,4 +244,8 @@ const mapNotionIdToDocusaurusPage = (notionId: string): string | undefined => {
       )
     }
   }
+
+  console.log('Updated Docusaurus files with Notion content.')
+
+  console.log('Process finished ✨')
 })()
