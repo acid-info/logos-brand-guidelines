@@ -5,8 +5,6 @@ displayed_sidebar: main
 
 # Gallery
 
-[Sizzle Reel draft.mp4](/)
-
 ![1920.png](/1920.png)
 
 ![article-page-light.jpg](/article-page-light.jpg)

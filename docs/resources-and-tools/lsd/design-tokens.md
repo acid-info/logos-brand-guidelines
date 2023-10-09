@@ -1,8 +1,6 @@
 ---
 title: Design tokens
 displayed_sidebar: main
-pagination_next: 'resources-and-tools/presentation-kits'
-pagination_prev: 'resources-and-tools/lsd/index'
 ---
 
 # Design tokens
@@ -11,12 +9,12 @@ Design tokens are variables that store values for the base layer of  LSD, like c
 
 ## Colour
 
-![Untitled](/Untitled.png)
+![design-tokens-colour](/design-tokens-colour.png)
 
 ## Layout
 
-![Untitled](/Untitled 1.png)
+![design-tokens-layout](/design-tokens-layout.png)
 
 ## **Typography**
 
-![Untitled](/Untitled 2.png)
+![design-tokens-typography](/design-tokens-typography.png)
