@@ -34,11 +34,7 @@ export const ImageGallery = ({ images }) => (
                         top: '50%',
                         left: '50%',
                         transform: 'translate(-50%, -50%) scale(1)',
-                        transition: 'transform 0.2s',
-                        cursor: 'pointer',
                     }}
-                    onMouseOver={e => e.currentTarget.style.transform = "translate(-50%, -50%) scale(1.1)"}
-                    onMouseOut={e => e.currentTarget.style.transform = "translate(-50%, -50%) scale(1)"}
                 />
             </div>
         ))}
