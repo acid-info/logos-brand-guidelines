@@ -16,6 +16,7 @@ const EXCLUDE_COMPONENTS = [
   'TabItem',
   'TableItem',
   'TableRow',
+  'Calendar',
 ]
 
 const COMPONENT_PROPS = ['size', 'variant']
@@ -49,30 +50,24 @@ const generateDocs = async (metadata: any) => {
       component.stories.find(s => s.name === 'Root') || component.stories[0]
     const storyId = story.id
 
-    const args = COMPONENT_PROPS.map(prop => [prop, component.argTypes[prop]])
-      .filter(prop => !!prop[1])
-      .map(prop => ({ name: prop[0], ...prop[1] }))
-      .map(prop => ({
-        ...prop,
-        defaultValue:
-          prop.defaultValue &&
-          (prop.type.value || []).includes(prop.defaultValue)
-            ? prop.defaultValue
-            : prop.type.value?.[0],
-      }))
+    // const args = COMPONENT_PROPS.map(prop => [prop, component.argTypes[prop]])
+    //   .filter(prop => !!prop[1])
+    //   .map(prop => ({ name: prop[0], ...prop[1] }))
+    //   .map(prop => ({
+    //     ...prop,
+    //     defaultValue:
+    //       prop.defaultValue &&
+    //       (prop.type.value || []).includes(prop.defaultValue)
+    //         ? prop.defaultValue
+    //         : prop.type.value?.[0],
+    //   }))
 
     let doc = ''
     doc += `import { StorybookDemo } from '@site/src/components/mdx/StorybookDemo';\n\n`
 
-    doc += `# ${component.name}\n`
-    doc += `## Preview\n`
-    doc += `<StorybookDemo name="${
-      component.name
-    }" storybookUrl="${STORYBOOK_URL}" storyId="${storyId}" globalTypes={${globalTypes}} componentProperties={${JSON.stringify(
-      args,
-      null,
-      2,
-    )}} />\n`
+    doc += `---\ntitle: ${component.name}\n---\n\n`
+    doc += `# \n\n`
+    doc += `<StorybookDemo name="${component.name}" storybookUrl="${STORYBOOK_URL}" storyId="${storyId}" globalTypes={{}} componentProperties={[]} />\n`
 
     await fsp.writeFile(path.join(componentsDir, `${component.name}.mdx`), doc)
   }

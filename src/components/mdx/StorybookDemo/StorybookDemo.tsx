@@ -67,25 +67,26 @@ export const StorybookDemo: React.FC<StorybookDemoProps> = ({
       ? new URL(el.src)
       : new URL('/iframe.html', storybookUrl as string)
 
-    url.searchParams.set('id', storyId)
-    url.searchParams.set('viewMode', 'story')
-    url.searchParams.set(
-      'globals',
-      Object.entries(globalProps)
-        .map(([name, value]) => `${name}:${value}`)
-        .join(';') + ';',
-    )
+    url.searchParams.set('id', storyId.replace('--root', '--docs'))
+    // url.searchParams.set('viewMode', 'story')
+    url.searchParams.set('globals', 'themeColor:Dark')
+    // url.searchParams.set(
+    //   'globals',
+    //   Object.entries(globalProps)
+    //     .map(([name, value]) => `${name}:${value}`)
+    //     .join(';') + ';',
+    // )
 
-    url.searchParams.set(
-      'args',
-      Object.entries(props)
-        .map(([name, value]) => `${name}:${value}`)
-        .join(';') + ';',
-    )
+    // url.searchParams.set(
+    //   'args',
+    //   Object.entries(props)
+    //     .map(([name, value]) => `${name}:${value}`)
+    //     .join(';') + ';',
+    // )
 
-    url.searchParams.set('full', '1')
-    url.searchParams.set('shortcuts', 'false')
-    url.searchParams.set('singleStory', 'true')
+    // url.searchParams.set('full', '1')
+    // url.searchParams.set('shortcuts', 'false')
+    // url.searchParams.set('singleStory', 'true')
 
     return url.toString()
   }, [storyId, globalProps, props])
