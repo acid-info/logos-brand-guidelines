@@ -63,9 +63,8 @@ const generateDocs = async (metadata: any) => {
     //   }))
 
     let doc = ''
-    doc += `import { StorybookDemo } from '@site/src/components/mdx/StorybookDemo';\n\n`
-
     doc += `---\ntitle: ${component.name}\n---\n\n`
+    doc += `import { StorybookDemo } from '@site/src/components/mdx/StorybookDemo';\n\n`
     doc += `# \n\n`
     doc += `<StorybookDemo name="${component.name}" storybookUrl="${STORYBOOK_URL}" storyId="${storyId}" globalTypes={{}} componentProperties={[]} />\n`
 
