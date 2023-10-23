@@ -4,6 +4,8 @@ sidebar_position: 3
 displayed_sidebar: main
 ---
 
+import { ColorCard, Grid } from "@site/src/components/mdx"
+
 # Color
 
 ## **Introduction**
@@ -32,10 +34,11 @@ In summary, our approach to color is rooted in our core values of simplicity, fu
 
 [Primary Palette](https://www.notion.so/8b15323df0d84a7c9ee520ecbcf38930)
 
-PNG
-
-![color.png](/color.png)
-
-SVG
-
-![color.svg](/color.svg)
+<Grid xs={{ cols: 1, wrap: true, gap: '16px' }} md={{ cols: 2 }}>
+  <Grid.Item xs={1}>
+    <ColorCard fullWidth title="Black" color="rgb(var(--lsd-theme-primary))" variables={[{ name: "Hex", value: "#000" }, { name: "RGB", value: "0, 0, 0" }]} />
+  </Grid.Item>
+  <Grid.Item xs={1}>
+    <ColorCard fullWidth title="White" color="rgb(var(--lsd-theme-secondary))" variables={[{ name: "Hex", value: "#fff" }, { name: "RGB", value: "255, 255, 255" }]} />
+  </Grid.Item>
+</Grid>
