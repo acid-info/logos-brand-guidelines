@@ -25,6 +25,7 @@ type ComponentProperty = {
 
 export type StorybookDemoProps = {
   name: string
+  docId: string
   storyId: string
   storybookUrl: string
   globalTypes: Record<string, GlobalType>
@@ -33,6 +34,7 @@ export type StorybookDemoProps = {
 
 export const StorybookDemo: React.FC<StorybookDemoProps> = ({
   name,
+  docId,
   storyId,
   storybookUrl,
   globalTypes,
@@ -67,29 +69,19 @@ export const StorybookDemo: React.FC<StorybookDemoProps> = ({
       ? new URL(el.src)
       : new URL('/iframe.html', storybookUrl as string)
 
-    url.searchParams.set('id', storyId.replace('--root', '--docs'))
-    // url.searchParams.set('viewMode', 'story')
+    url.searchParams.set('id', docId)
+    storyId && url.searchParams.set('storyId', storyId)
     url.searchParams.set('globals', 'themeColor:Dark')
-    // url.searchParams.set(
-    //   'globals',
-    //   Object.entries(globalProps)
-    //     .map(([name, value]) => `${name}:${value}`)
-    //     .join(';') + ';',
-    // )
-
-    // url.searchParams.set(
-    //   'args',
-    //   Object.entries(props)
-    //     .map(([name, value]) => `${name}:${value}`)
-    //     .join(';') + ';',
-    // )
-
-    // url.searchParams.set('full', '1')
-    // url.searchParams.set('shortcuts', 'false')
-    // url.searchParams.set('singleStory', 'true')
+    url.searchParams.set('globals', 'themeFont:sans-serif')
+    url.searchParams.set('embedded', 'true')
+    url.searchParams.set(
+      'hide',
+      'title,subtitle,toolbar' + (storyId ? ',description,canvas-border,code' : ''),
+    )
+    url.searchParams.set('globalControls', 'true')
 
     return url.toString()
-  }, [storyId, globalProps, props])
+  }, [docId, storyId, globalProps, props])
 
   return (
     <div className={clsx(styles.root, styles[globalProps.themeColor])}>
