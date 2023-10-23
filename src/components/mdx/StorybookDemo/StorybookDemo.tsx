@@ -71,12 +71,12 @@ export const StorybookDemo: React.FC<StorybookDemoProps> = ({
 
     url.searchParams.set('id', docId)
     storyId && url.searchParams.set('storyId', storyId)
-    url.searchParams.set('globals', 'themeColor:Dark')
-    url.searchParams.set('globals', 'themeFont:sans-serif')
+    url.searchParams.set('globals', 'themeColor:Dark,themeFont:sans-serif')
     url.searchParams.set('embedded', 'true')
     url.searchParams.set(
       'hide',
-      'title,subtitle,toolbar' + (storyId ? ',description,canvas-border,code' : ''),
+      'title,subtitle,toolbar' +
+        (storyId ? ',description,canvas-border,code' : ''),
     )
     url.searchParams.set('globalControls', 'true')
 
