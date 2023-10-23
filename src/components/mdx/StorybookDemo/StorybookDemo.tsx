@@ -71,7 +71,7 @@ export const StorybookDemo: React.FC<StorybookDemoProps> = ({
 
     url.searchParams.set('id', docId)
     storyId && url.searchParams.set('storyId', storyId)
-    url.searchParams.set('globals', 'themeColor:Dark,themeFont:sans-serif')
+    url.searchParams.set('globals', 'themeColor:Dark;themeFont:sans-serif')
     url.searchParams.set('embedded', 'true')
     url.searchParams.set(
       'hide',
