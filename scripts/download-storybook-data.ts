@@ -3,6 +3,7 @@ import * as fsp from 'fs/promises'
 import fetch from 'node-fetch'
 import * as path from 'path'
 import { URL } from 'url'
+import type { ComponentGridProps } from '../src/components/mdx'
 import { DATA_DIR } from './config'
 
 const EXCLUDE_COMPONENTS = [
@@ -98,6 +99,38 @@ const generateDocs = async (metadata: any) => {
 
   await fsp.rename(componentsDir, COMPONENTS_DIR)
   await fsp.rename(designTokensDir, DESIGN_TOKENS_DIR)
+
+  {
+    // components index page
+
+    let doc = ''
+    doc += `---\ntitle: Components\n---\n\n`
+    doc += `import { ComponentGrid } from '@site/src/components/mdx';\n\n`
+    doc += `# Components\n\n`
+
+    const list: ComponentGridProps['list'] = []
+
+    for (const component of components) {
+      const { name } = component
+
+      const imagePath = path.join(
+        DATA_DIR,
+        `../static/img/components/${name}.png`,
+      )
+
+      if (fs.existsSync(imagePath)) {
+        list.push({
+          title: name,
+          href: `./${name}`,
+          imageSrc: `/img/components/${name}.png`,
+        })
+      }
+    }
+
+    doc += `<ComponentGrid list={${JSON.stringify(list, null, 2)}} />\n`
+
+    await fsp.writeFile(path.join(COMPONENTS_DIR, `index.mdx`), doc)
+  }
 }
 
 export const run = async () => {

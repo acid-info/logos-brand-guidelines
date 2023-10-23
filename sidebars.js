@@ -110,7 +110,8 @@ const sidebars = {
           type: 'category',
           label: 'Components',
           link: {
-            type: 'generated-index',
+            type: 'doc',
+            id: 'resources-and-tools/lsd/components/index',
           },
           items: [
             {
