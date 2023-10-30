@@ -176,16 +176,12 @@ const mapNotionIdToDocusaurusPage = (notionId: string): string | undefined => {
       return 'resources-and-tools/lsd/index.md'
     }
 
-    if (notionId === '31ea305ac88342ebbc505ea93e3bca3a') {
-      return 'resources-and-tools/lsd/design-tokens.md'
-    }
+    // if (notionId === '31ea305ac88342ebbc505ea93e3bca3a') {
+    //   return 'resources-and-tools/lsd/design-tokens.md'
+    // }
 
     if (notionId === 'e5522cb5bfc94082adac41f1ab17a673') {
       return 'resources-and-tools/gallery.md'
-    }
-
-    if (notionId === 'c2c250f49ccf47d5835001d407237e8c') {
-      return 'resources-and-tools/presentation-kits.md'
     }
 
     if (notionId === '6c4c002d6ead446cb1f58cbb34a7be4c') {
@@ -197,15 +193,15 @@ const mapNotionIdToDocusaurusPage = (notionId: string): string | undefined => {
     }
 
     if (notionId === '11be69519d6649f8a4a10697b503defc') {
-      return 'visual-language/typography.md'
+      return 'visual-language/typography/index.md'
     }
 
     if (notionId === 'c9c45bd6789c41cbbc1c71b296cf68a8') {
-      return 'visual-language/color.md'
+      return 'visual-language/color.mdx'
     }
 
     if (notionId === '38c306bc2d20470abc12b98b5e90b7b5') {
-      return 'visual-language/grid-and-layout.md'
+      return 'visual-language/grid-and-layout/index.md'
     }
 
     if (notionId === '066ee8d5fd9f4dec90716560ccfa59ff') {
@@ -214,6 +210,38 @@ const mapNotionIdToDocusaurusPage = (notionId: string): string | undefined => {
 
     if (notionId === 'd074e71c5fd84900a53038757ce78fbb') {
       return 'index.md'
+    }
+
+    if (notionId === 'db1a5b3376614f5088fb2b5226511bd1') {
+      return 'visual-language/grid-and-layout/web-environment.md'
+    }
+
+    if (notionId === '97ad082daad4481c97c3b289436f8a74') {
+      return 'visual-language/grid-and-layout/non-web-environment.md'
+    }
+
+    if (notionId === 'cfb5ecd4e5fd4fdb845a0a8549484d68') {
+      return 'visual-language/photography.md'
+    }
+
+    if (notionId === '8bd438bf4c444c08b7c891ef82ebae48') {
+      return 'visual-language/illustration.md'
+    }
+
+    if (notionId === 'e03347bb59be40e085e3a63f8d999397') {
+      return 'visual-language/typography/web-environment.md'
+    }
+
+    if (notionId === '02c169fd8be940f088a402915ffaf7e7') {
+      return 'visual-language/typography/non-web-environment.md'
+    }
+
+    if (notionId === 'c2c250f49ccf47d5835001d407237e8c') {
+      return 'templates/presentation-kits.md'
+    }
+
+    if (notionId === '635167c3f9fc414aa2902e43efce2bde') {
+      return 'templates/social-media-assets.md'
     }
   }
 

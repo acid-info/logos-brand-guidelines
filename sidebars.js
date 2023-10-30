@@ -29,16 +29,9 @@ const sidebars = {
       defaultStyle: true,
     },
     {
-      type: 'category',
+      type: 'doc',
       label: 'Voice',
-      collapsible: true,
-      items: [
-        {
-          type: 'doc',
-          label: 'Overview',
-          id: 'voice/index',
-        },
-      ],
+      id: 'voice/index',
     },
     {
       type: 'category',
@@ -60,18 +53,63 @@ const sidebars = {
         },
         {
           type: 'doc',
-          label: 'Typography',
-          id: 'visual-language/typography',
-        },
-        {
-          type: 'doc',
           label: 'Color',
           id: 'visual-language/color',
         },
         {
           type: 'doc',
-          label: 'Grid & Layout',
-          id: 'visual-language/grid-and-layout',
+          label: 'Photography',
+          id: 'visual-language/photography',
+        },
+        {
+          type: 'doc',
+          label: 'Illustration',
+          id: 'visual-language/illustration',
+        },
+
+        {
+          type: 'category',
+          label: 'Typography',
+          collapsible: true,
+          items: [
+            {
+              type: 'doc',
+              label: 'Overview',
+              id: 'visual-language/typography/index',
+            },
+            {
+              type: 'doc',
+              label: 'Web Environment',
+              id: 'visual-language/typography/web-environment',
+            },
+            {
+              type: 'doc',
+              label: 'Non-web Environment',
+              id: 'visual-language/typography/non-web-environment',
+            },
+          ],
+        },
+        {
+          type: 'category',
+          label: 'Grid and Layout',
+          collapsible: true,
+          items: [
+            {
+              type: 'doc',
+              label: 'Overview',
+              id: 'visual-language/grid-and-layout/index',
+            },
+            {
+              type: 'doc',
+              label: 'Web Environment',
+              id: 'visual-language/grid-and-layout/web-environment',
+            },
+            {
+              type: 'doc',
+              label: 'Non-web Environment',
+              id: 'visual-language/grid-and-layout/non-web-environment',
+            },
+          ],
         },
       ],
     },
@@ -122,7 +160,25 @@ const sidebars = {
         },
       ],
     },
-    'resources-and-tools/presentation-kits',
+
+    {
+      type: 'category',
+      label: 'Templates',
+      collapsible: true,
+      items: [
+        {
+          type: 'doc',
+          label: 'Presentation kits',
+          id: 'templates/presentation-kits',
+        },
+        {
+          type: 'doc',
+          label: 'Social media assets',
+          id: 'templates/social-media-assets',
+        },
+      ],
+    },
+
     'resources-and-tools/gallery',
   ],
 }
