@@ -8,11 +8,11 @@ displayed_sidebar: main
 
 # Brand Marks
 
-### Choosing the right mark
+## Choosing the right mark
 
-Our mark is the primary brand element on our own properties, such as our websites and products. Here it can stand on its own. A simple bold mark can make a powerful statement. When our brand is represented in other contexts, throughout the web or in products we do not own, it is usually best to use a lockup.
+Our mark is the primary brand element on our own properties, such as our websites and products. Here it can stand on its own.
 
-Please do not edit, change, distort, recolor, or reconfigure the Logos mark. Our mark is the primary brand element on our own properties, such as our websites and products.
+When our brand is represented in other contexts, throughout the web or in products we do not own, it is usually best to use a lockup. Please do not edit, change, distort, recolor, or reconfigure the Logos mark. Our mark is the primary brand element on our own properties, such as our websites and products.
 
 ## Primary Mark
 
@@ -26,7 +26,7 @@ Please do not edit, change, distort, recolor, or reconfigure the Logos mark. Our
 
 ## Lockup - Vertical
 
-When we represent our brand throughout the web or in products we do not own, it is usually best to use a lockup. These vertical lockups are best used arranged horizontally in a line.
+These vertical lockups are best used arranged horizontally in a line.
 
 | ![Logos lockup - vertical - black](https://raw.githubusercontent.com/acid-info/design-assets/fd0fcfd7b2a2ff641bd3b0663e541d26d9f1de16/logos/logos-lockup-vertical-display-black.svg) | ![Logos lockup - vertical - white](https://raw.githubusercontent.com/acid-info/design-assets/fd0fcfd7b2a2ff641bd3b0663e541d26d9f1de16/logos/logos-lockup-vertical-display-white.svg) |
 | -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
@@ -38,7 +38,7 @@ When we represent our brand throughout the web or in products we do not own, it 
 
 ## Lockup - Horizontal
 
-When we represent our brand throughout the web or in products we do not own, it is usually best to use a lockup. These horizontal lockups are best used stacked vertically.
+These horizontal lockups are best used stacked vertically.
 
 | ![Logos lockup - horizontal - black](https://raw.githubusercontent.com/acid-info/design-assets/fd0fcfd7b2a2ff641bd3b0663e541d26d9f1de16/logos/logos-lockup-horizontal-display-black.svg) | ![Logos lockup - horizontal - white](https://raw.githubusercontent.com/acid-info/design-assets/fd0fcfd7b2a2ff641bd3b0663e541d26d9f1de16/logos/logos-lockup-horizontal-display-white.svg) |
 | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -48,11 +48,11 @@ When we represent our brand throughout the web or in products we do not own, it 
 
 ---
 
-### Clearspace
+## Clearspace
 
 When placing the logo, it’s important that it’s given enough space from other elements on the surface it’s presented on. The Clearspace is 50% of the width of the Logos mark. This Clearspace is accounted for as a margin in all our logo assets, so simply mind the edges of the image.
 
-If you need to define the unit of space, the best way is to measure the bottom of any given mark to the edge of the image or the baseline of the logotype in the lockup to the bottom edge of the image. This unit is the same across all of our marks.
+If you need to define the unit of space, the best way is to measure the bottom of any given mark to the edge of the image or the baseline of the logotype in the lockup to the bottom edge of the image.
 
 ![logos-guide-clearspace-mark.png](https://raw.githubusercontent.com/acid-info/design-assets/fd0fcfd7b2a2ff641bd3b0663e541d26d9f1de16/logos/logos-guide-clearspace-mark.png)
 
@@ -67,15 +67,5 @@ Hierarchy is determined by the placement order, the most important being left in
 - All marks should be the same style
 - Do not mix lockups and non-lockups
 - Do not mix vertical lockups with horizontal lockups
-
----
-
-# Social Assets
-
-Our asset library will be more robust in the future, but the images below are branded avatars social accounts, followed by a preview of how they will look on Twitter.
-
-![logos-preview-twitter.png](/logos-preview-twitter.png)
-
-[Untitled Database](https://www.notion.so/d4660e2f486143dbb37c87b93722b510)
 
 ---
