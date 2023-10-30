@@ -26,7 +26,7 @@ Gutter size - 16px.
 
 ### Web grid templates
 
-[](https://www.figma.com/file/qH2d0UtCAcrcn23or1WgfB/Logos-templates?type=design&node-id=215%3A8&mode=design&t=0bOCaBBwhofQKq0c-1)
+[Figma link](https://www.figma.com/file/qH2d0UtCAcrcn23or1WgfB/Logos-templates?type=design&node-id=215%3A8&mode=design&t=0bOCaBBwhofQKq0c-1)
 
 ## Examples
 
