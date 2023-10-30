@@ -4,7 +4,82 @@ sidebar_position: 5
 displayed_sidebar: main
 ---
 
-# Illustration
+import { ImageGrid, Grid } from "@site/src/components/mdx"
+
+export const protocolPromotion = [
+    {src: "/Conceptual-illustration-1.png"},
+    {src: "/Conceptual-illustration-2.png"},
+    {src: "/Conceptual-illustration-3.png"},
+    {src: "/Conceptual-illustration-4.png"},
+]
+
+export const conceptualImages = [
+    {src: "/Conceptual-illustration-5.png"},
+    {src: "/Conceptual-illustration-6.png"},
+    {src: "/Conceptual-illustration-7.png"},
+    {src: "/Conceptual-illustration-8.png"},
+    {src: "/Conceptual-illustration-9.png"},
+    {src: "/Conceptual-illustration-10.png"},
+    {src: "/Conceptual-illustration-11.png"},
+    {src: "/Conceptual-illustration-12.png"},
+    {src: "/Conceptual-illustration-13.png"},
+    {src: "/Conceptual-illustration-14.png"},
+    {src: "/Conceptual-illustration-15.png"},
+    {src: "/Conceptual-illustration-16.png"},
+    {src: "/Conceptual-illustration-17.png"},
+    {src: "/Conceptual-illustration-18.png"},
+    {src: "/Conceptual-illustration-19.png"},
+    {src: "/Conceptual-illustration-20.png"},
+    {src: "/Conceptual-illustration-21.png"},
+    {src: "/Conceptual-illustration-22.png"},
+    {src: "/Conceptual-illustration-23.png"},
+    {src: "/Conceptual-illustration-24.png"},
+    {src: "/Conceptual-illustration-25.png"},
+]
+
+export const abstractImages = [
+    {src: "/Abstract-1.png"},
+    {src: "/Abstract-2.png"},
+    {src: "/Abstract-3.png"},
+    {src: "/Abstract-6.png"},
+    {src: "/Abstract-7.png"},
+    {src: "/Abstract-8.png"},
+    {src: "/Abstract-9.png"},
+    {src: "/Abstract-10.png"},
+    {src: "/Abstract-11.png"},
+    {src: "/Abstract-12.png"},
+    {src: "/Abstract-13.png"},
+    {src: "/Abstract-14.png"},
+    {src: "/Abstract-15.png"},
+    {src: "/Abstract-16.png"},
+    {src: "/Abstract-17.png"},
+    {src: "/Abstract-20.png"},
+    {src: "/Abstract-21.png"},
+    {src: "/Abstract-22.png"},
+    {src: "/Abstract-23.png"},
+    {src: "/Abstract-24.png"},
+    {src: "/Abstract-25.png"},
+    {src: "/Abstract-26.png"},
+    {src: "/Abstract-27.png"},
+    {src: "/Abstract-28.png"},
+    {src: "/Abstract-29.png"},
+    {src: "/Abstract-30.png"},
+    {src: "/Abstract-31.png"},
+    {src: "/Abstract-34.png"},
+    {src: "/Abstract-35.png"},
+    {src: "/Abstract-36.png"},
+    {src: "/Abstract-37.png"},
+    {src: "/Abstract-38.png"},
+    {src: "/Abstract-39.png"},
+    {src: "/Abstract-40.png"},
+    {src: "/Abstract-41.png"},
+    {src: "/Abstract-42.png"},
+    {src: "/Abstract-42-1.png"},
+    {src: "/Abstract-44.png"},
+    {src: "/Abstract-45.png"},
+    {src: "/Abstract-48.png"},
+    {src: "/Abstract-49.png"},
+]
 
 The selected illustration style is detailed, and symmetrical to suggest the subliminal or occult. The artwork can be simplified but should be strong conceptually relating back to one of the concepts.
 
@@ -18,59 +93,25 @@ Which is which - Specific
 
 Why each were chosen
 
-![Conceptual-illustration-1.png](/Conceptual-illustration-1.png)
-
-![Conceptual-illustration-2.png](/Conceptual-illustration-2.png)
-
-![Conceptual-illustration-3.png](/Conceptual-illustration-3.png)
-
-![Conceptual-illustration-4.png](/Conceptual-illustration-4.png)
+<ImageGrid>
+    {protocolPromotion.map((img, index) => (
+        <Grid.Item key={index}>
+            <img src={img.src} />
+        </Grid.Item>
+    ))}
+</ImageGrid>
 
 ## Conceptual
 
 The selected illustration style is detailed, and symmetrical to suggest the subliminal or occult. The artwork can be simplified but should be strong conceptually relating back to one of the concepts.
 
-![Conceptual-illustration-5.png](/Conceptual-illustration-5.png)
-
-![Conceptual-illustration-6.png](/Conceptual-illustration-6.png)
-
-![Conceptual-illustration-7.png](/Conceptual-illustration-7.png)
-
-![Conceptual-illustration-8.png](/Conceptual-illustration-8.png)
-
-![Conceptual-illustration-9.png](/Conceptual-illustration-9.png)
-
-![Conceptual-illustration-10.png](/Conceptual-illustration-10.png)
-
-![Conceptual-illustration-11.png](/Conceptual-illustration-11.png)
-
-![Conceptual-illustration-12.png](/Conceptual-illustration-12.png)
-
-![Conceptual-illustration-13.png](/Conceptual-illustration-13.png)
-
-![Conceptual-illustration-14.png](/Conceptual-illustration-14.png)
-
-![Conceptual-illustration-15.png](/Conceptual-illustration-15.png)
-
-![Conceptual-illustration-16.png](/Conceptual-illustration-16.png)
-
-![Conceptual-illustration-17.png](/Conceptual-illustration-17.png)
-
-![Conceptual-illustration-18.png](/Conceptual-illustration-18.png)
-
-![Conceptual-illustration-19.png](/Conceptual-illustration-19.png)
-
-![Conceptual-illustration-20.png](/Conceptual-illustration-20.png)
-
-![Conceptual-illustration-21.png](/Conceptual-illustration-21.png)
-
-![Conceptual-illustration-22.png](/Conceptual-illustration-22.png)
-
-![Conceptual-illustration-23.png](/Conceptual-illustration-23.png)
-
-![Conceptual-illustration-24.png](/Conceptual-illustration-24.png)
-
-![Conceptual-illustration-25.png](/Conceptual-illustration-25.png)
+<ImageGrid>
+    {conceptualImages.map((img, index) => (
+        <Grid.Item key={index}>
+            <img src={img.src} />
+        </Grid.Item>
+    ))}
+</ImageGrid>
 
 ## Abstract
 
@@ -78,84 +119,10 @@ Texture can be preferable giving a layering or aging effect to the work suggesti
 
 HIO uses these abstracts for the Flash Hash episode covers.
 
-![Abstract-1.png](/Abstract-1.png)
-
-![Abstract-2.png](/Abstract-2.png)
-
-![Abstract-3.png](/Abstract-3.png)
-
-![Abstract-6.png](/Abstract-6.png)
-
-![Abstract-7.png](/Abstract-7.png)
-
-![Abstract-8.png](/Abstract-8.png)
-
-![Abstract-9.png](/Abstract-9.png)
-
-![Abstract-10.png](/Abstract-10.png)
-
-![Abstract-11.png](/Abstract-11.png)
-
-![Abstract-12.png](/Abstract-12.png)
-
-![Abstract-13.png](/Abstract-13.png)
-
-![Abstract-14.png](/Abstract-14.png)
-
-![Abstract-15.png](/Abstract-15.png)
-
-![Abstract-16.png](/Abstract-16.png)
-
-![Abstract-17.png](/Abstract-17.png)
-
-![Abstract-20.png](/Abstract-20.png)
-
-![Abstract-21.png](/Abstract-21.png)
-
-![Abstract-22.png](/Abstract-22.png)
-
-![Abstract-23.png](/Abstract-23.png)
-
-![Abstract-24.png](/Abstract-24.png)
-
-![Abstract-25.png](/Abstract-25.png)
-
-![Abstract-26.png](/Abstract-26.png)
-
-![Abstract-27.png](/Abstract-27.png)
-
-![Abstract-28.png](/Abstract-28.png)
-
-![Abstract-29.png](/Abstract-29.png)
-
-![Abstract-30.png](/Abstract-30.png)
-
-![Abstract-31.png](/Abstract-31.png)
-
-![Abstract-34.png](/Abstract-34.png)
-
-![Abstract-35.png](/Abstract-35.png)
-
-![Abstract-36.png](/Abstract-36.png)
-
-![Abstract-37.png](/Abstract-37.png)
-
-![Abstract-38.png](/Abstract-38.png)
-
-![Abstract-39.png](/Abstract-39.png)
-
-![Abstract-40.png](/Abstract-40.png)
-
-![Abstract-41.png](/Abstract-41.png)
-
-![Abstract-42-1.png](/Abstract-42-1.png)
-
-![Abstract-42.png](/Abstract-42.png)
-
-![Abstract-44.png](/Abstract-44.png)
-
-![Abstract-45.png](/Abstract-45.png)
-
-![Abstract-48.png](/Abstract-48.png)
-
-![Abstract-49.png](/Abstract-49.png)
+<ImageGrid>
+    {abstractImages.map((img, index) => (
+        <Grid.Item key={index}>
+            <img src={img.src} />
+        </Grid.Item>
+    ))}
+</ImageGrid>

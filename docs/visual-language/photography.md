@@ -1,10 +1,63 @@
 ---
-title: Illustration
+title: Photography
 sidebar_position: 4
 displayed_sidebar: main
 ---
 
-# Photography
+import { ImageGrid, Grid } from "@site/src/components/mdx"
+
+export const portraits = [
+    {src: "/Logos-Photography-01.png"},
+    {src: "/Logos-Photography-02.png"},
+    {src: "/Logos-Photography-03.png"},
+    {src: "/HIO-Photography-01.png"},
+    {src: "/HIO-Photography-02.png"},
+    {src: "/HIO-Photography-03.png"},
+    {src: "/HIO-Photography-04.png"},
+]
+
+export const activismImages = [
+    {src: "/Activism-1.png"},
+    {src: "/Activism-2.png"},
+    {src: "/Activism-3.png"},
+    {src: "/Activism-4.png"},
+    {src: "/Activism-5.png"},
+    {src: "/Activism-6.png"},
+    {src: "/Activism-7.png"},
+    {src: "/Activism-8.png"},
+    {src: "/Activism-9.png"},
+    {src: "/Activism-10.png"},
+    {src: "/Activism-11.png"},
+    {src: "/Activism-12.png"},
+    {src: "/Activism-13.png"},
+    {src: "/Activism-14.png"},
+]
+
+export const conceptualImages = [
+    {src: "/Conceptual-1.png"},
+    {src: "/Conceptual-2.png"},
+    {src: "/Conceptual-3.png"},
+    {src: "/Conceptual-4.png"},
+    {src: "/Conceptual-5.png"},
+    {src: "/Conceptual-6.png"},
+    {src: "/Conceptual-7.png"},
+    {src: "/Conceptual-8.png"},
+    {src: "/Conceptual-9.png"},
+    {src: "/Conceptual-10.png"},
+    {src: "/Conceptual-11.png"},
+    {src: "/Conceptual-12.png"},
+    {src: "/Conceptual-13.png"},
+    {src: "/Conceptual-14.png"},
+    {src: "/Conceptual-15.png"},
+    {src: "/Conceptual-16.png"},
+    {src: "/Conceptual-17.png"},
+    {src: "/Conceptual-18.png"},
+    {src: "/Conceptual-19.png"},
+    {src: "/Conceptual-20.png"},
+    {src: "/Conceptual-21.png"},
+    {src: "/Conceptual-22.png"},
+    {src: "/Conceptual-23.png"},
+]
 
 We have a unique photography style for each of the following categories; Portraits, Activism, and Conceptual.
 
@@ -18,21 +71,13 @@ Guest consent when possible.
 
 Displays a decent amount of head and shoulders crop.
 
-![Logos-Photography-01.png](/Logos-Photography-01.png)
-
-![Logos-Photography-02.png](/Logos-Photography-02.png)
-
-![Logos-Photography-03.png](/Logos-Photography-03.png)
-
-![Logos-Photography-04.png](/Logos-Photography-04.png)
-
-![HIO-Photography-01.png](/HIO-Photography-01.png)
-
-![HIO-Photography-02.png](/HIO-Photography-02.png)
-
-![HIO-Photography-03.png](/HIO-Photography-03.png)
-
-![HIO-Photography-04.png](/HIO-Photography-04.png)
+<ImageGrid>
+    {portraits.map((img, index) => (
+        <Grid.Item key={index}>
+            <img src={img.src} />
+        </Grid.Item>
+    ))}
+</ImageGrid>
 
 ## Activism
 
@@ -46,33 +91,13 @@ Protests, demonstrations.
 
 Free is good, licensed can be used (need to work out details).
 
-![Activism-1.png](/Activism-1.png)
-
-![Activism-2.png](/Activism-2.png)
-
-![Activism-3.png](/Activism-3.png)
-
-![Activism-4.png](/Activism-4.png)
-
-![Activism-5.png](/Activism-5.png)
-
-![Activism-6.png](/Activism-6.png)
-
-![Activism-7.png](/Activism-7.png)
-
-![Activism-8.png](/Activism-8.png)
-
-![Activism-9.png](/Activism-9.png)
-
-![Activism-10.png](/Activism-10.png)
-
-![Activism-11.png](/Activism-11.png)
-
-![Activism-12.png](/Activism-12.png)
-
-![Activism-13.png](/Activism-13.png)
-
-![Activism-14.png](/Activism-14.png)
+<ImageGrid>
+    {activismImages.map((img, index) => (
+        <Grid.Item key={index}>
+            <img src={img.src} />
+        </Grid.Item>
+    ))}
+</ImageGrid>
 
 ## Conceptual
 
@@ -84,48 +109,10 @@ Relates to core Logos concepts; human rights, privacy, civil liberties, etc.
 
 Free is good, licensed can be used (need to work out details).
 
-![Conceptual-1.png](/Conceptual-1.png)
-
-![Conceptual-2.png](/Conceptual-2.png)
-
-![Conceptual-3.png](/Conceptual-3.png)
-
-![Conceptual-4.png](/Conceptual-4.png)
-
-![Conceptual-5.png](/Conceptual-5.png)
-
-![Conceptual-6.png](/Conceptual-6.png)
-
-![Conceptual-7.png](/Conceptual-7.png)
-
-![Conceptual-8.png](/Conceptual-8.png)
-
-![Conceptual-9.png](/Conceptual-9.png)
-
-![Conceptual-10.png](/Conceptual-10.png)
-
-![Conceptual-11.png](/Conceptual-11.png)
-
-![Conceptual-12.png](/Conceptual-12.png)
-
-![Conceptual-13.png](/Conceptual-13.png)
-
-![Conceptual-14.png](/Conceptual-14.png)
-
-![Conceptual-15.png](/Conceptual-15.png)
-
-![Conceptual-16.png](/Conceptual-16.png)
-
-![Conceptual-17.png](/Conceptual-17.png)
-
-![Conceptual-18.png](/Conceptual-18.png)
-
-![Conceptual-19.png](/Conceptual-19.png)
-
-![Conceptual-20.png](/Conceptual-20.png)
-
-![Conceptual-21.png](/Conceptual-21.png)
-
-![Conceptual-22.png](/Conceptual-22.png)
-
-![Conceptual-23.png](/Conceptual-23.png)
+<ImageGrid>
+    {conceptualImages.map((img, index) => (
+        <Grid.Item key={index}>
+            <img src={img.src} />
+        </Grid.Item>
+    ))}
+</ImageGrid>
