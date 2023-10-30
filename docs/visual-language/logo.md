@@ -14,19 +14,32 @@ When our brand is represented in other contexts, throughout the web or in produc
 
 ## Primary Mark
 
-[Untitled Database](https://www.notion.so/86e8c3f2be7c4f60901f653a0f35ce25)
+| ![Logos primary mark - black](https://raw.githubusercontent.com/acid-info/design-assets/fd0fcfd7b2a2ff641bd3b0663e541d26d9f1de16/logos/logos-mark-display-black.svg)  | ![Logos primary mark - white](https://raw.githubusercontent.com/acid-info/design-assets/fd0fcfd7b2a2ff641bd3b0663e541d26d9f1de16/logos/logos-mark-display-white.svg)  |
+| ----------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| Logos primary mark - black                                                                                              | Logos primary mark - white                                                                                              |
+| [logos-mark-primary-black.png](https://raw.githubusercontent.com/acid-info/design-assets/fd0fcfd7b2a2ff641bd3b0663e541d26d9f1de16/logos/logos-mark-primary-black.png) | [logos-mark-primary-white.png](https://raw.githubusercontent.com/acid-info/design-assets/fd0fcfd7b2a2ff641bd3b0663e541d26d9f1de16/logos/logos-mark-primary-white.png) |
+| [logos-mark-primary-black.svg](https://raw.githubusercontent.com/acid-info/design-assets/fd0fcfd7b2a2ff641bd3b0663e541d26d9f1de16/logos/logos-mark-primary-black.svg) | [logos-mark-primary-white.svg](https://raw.githubusercontent.com/acid-info/design-assets/fd0fcfd7b2a2ff641bd3b0663e541d26d9f1de16/logos/logos-mark-primary-white.svg) |
+
 
 ## Lockup — Vertical
 
 These vertical lockups are best used arranged horizontally in a line.
 
-[Untitled Database](https://www.notion.so/68cef135a831455abd309dc1ce5a00b2)
+| ![Logos lockup - vertical - black](https://raw.githubusercontent.com/acid-info/design-assets/fd0fcfd7b2a2ff641bd3b0663e541d26d9f1de16/logos/logos-lockup-vertical-display-black.svg) | ![Logos lockup - vertical - white](https://raw.githubusercontent.com/acid-info/design-assets/fd0fcfd7b2a2ff641bd3b0663e541d26d9f1de16/logos/logos-lockup-vertical-display-white.svg) |
+| -------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| Logos lockup - vertical - black                                                                                                        | Logos lockup - vertical - white                                                                                                        |
+| [logos-lockup-vertical-black.png](https://raw.githubusercontent.com/acid-info/design-assets/fd0fcfd7b2a2ff641bd3b0663e541d26d9f1de16/logos/logos-lockup-vertical-black.png)          | [logos-lockup-vertical-white.png](https://raw.githubusercontent.com/acid-info/design-assets/fd0fcfd7b2a2ff641bd3b0663e541d26d9f1de16/logos/logos-lockup-vertical-white.png)          |
+| [logos-lockup-vertical-black.svg](https://raw.githubusercontent.com/acid-info/design-assets/fd0fcfd7b2a2ff641bd3b0663e541d26d9f1de16/logos/logos-lockup-vertical-black.svg)          | [logos-lockup-vertical-white.svg](https://raw.githubusercontent.com/acid-info/design-assets/fd0fcfd7b2a2ff641bd3b0663e541d26d9f1de16/logos/logos-lockup-vertical-white.svg)          |
 
 ## Lockup — Horizontal
 
 These horizontal lockups are best used stacked vertically.
 
-[Untitled Database](https://www.notion.so/23686be708a0493f98851b2562c05dc9)
+| ![Logos lockup - horizontal - black](https://raw.githubusercontent.com/acid-info/design-assets/fd0fcfd7b2a2ff641bd3b0663e541d26d9f1de16/logos/logos-lockup-horizontal-display-black.svg) | ![Logos lockup - horizontal - white](https://raw.githubusercontent.com/acid-info/design-assets/fd0fcfd7b2a2ff641bd3b0663e541d26d9f1de16/logos/logos-lockup-horizontal-display-white.svg) |
+| ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| Logos lockup mark - horizontal - black                                                                                                     | Logos lockup mark - horizontal - white                                                                                                     |
+| [logos-lockup-horizontal-black.png](https://raw.githubusercontent.com/acid-info/design-assets/fd0fcfd7b2a2ff641bd3b0663e541d26d9f1de16/logos/logos-lockup-horizontal-black.png)          | [logos-lockup-horizontal-white.png](https://raw.githubusercontent.com/acid-info/design-assets/fd0fcfd7b2a2ff641bd3b0663e541d26d9f1de16/logos/logos-lockup-horizontal-white.png)          |
+| [logos-lockup-horizontal-black.svg](https://raw.githubusercontent.com/acid-info/design-assets/fd0fcfd7b2a2ff641bd3b0663e541d26d9f1de16/logos/logos-lockup-horizontal-black.svg)          | [logos-lockup-horizontal-white.svg](https://raw.githubusercontent.com/acid-info/design-assets/fd0fcfd7b2a2ff641bd3b0663e541d26d9f1de16/logos/logos-lockup-horizontal-white.svg)          |
 
 ## Clearspace
 
