@@ -81,17 +81,15 @@ export const abstractImages = [
     {src: "/Abstract-49.png"},
 ]
 
-The selected illustration style is detailed, and symmetrical to suggest the subliminal or occult. The artwork can be simplified but should be strong conceptually relating back to one of the concepts.
+These 3D rendered animations are used to promote Nomos, Waku, Nimbus, and Codex. Each Protocol has its own and can be used in static or animated form. In some cases these statues appear to be previously broken and repaired in the style of Japanese Kintsugi (golden repair). This is a metaphor for the vision of Logos to rebuild the currently broken modern society with the pieces of enlightenment and renaissance ideas.
 
-Texture can be preferable giving a layering or aging effect to the work suggesting time or craft. Many digital illustrations can feel rushed or flat without a subtle texture effect depending upon the execution.
+Codex - data backbone, the archive, Atlas holding up the world
 
-## Protocol Promotion
+Nomos - David, ancient symbol of freedom and egalitarian values
 
-These 3D rendered animations are used to promote Nomos, Waku, Nimbus, and Codex. Each Protocol has its own and can be used in static or animated form.
+Nimbus - Aphrodite with halo, lightness, symbol of love, attraction
 
-Which is which - Specific
-
-Why each were chosen
+Waku - Prometheus, delivering transformative technology
 
 <ImageGrid>
     {protocolPromotion.map((img, index) => (
@@ -104,6 +102,8 @@ Why each were chosen
 ## Conceptual
 
 The selected illustration style is detailed, and symmetrical to suggest the subliminal or occult. The artwork can be simplified but should be strong conceptually relating back to one of the concepts.
+
+Need to come up with a plan/process for creating/buying/commissioning/using this type of illustration. Could be applicable to Network State Press articles and social promo stuff.
 
 <ImageGrid>
     {conceptualImages.map((img, index) => (

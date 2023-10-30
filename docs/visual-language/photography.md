@@ -63,13 +63,7 @@ We have a unique photography style for each of the following categories; Portrai
 
 ## Portraits
 
-This style is primarily used for podcast promotion.
-
-Black and white, dramatic lighting where possible.
-
-Guest consent when possible.
-
-Displays a decent amount of head and shoulders crop.
+This style, primarily used for podcast promotion, incorporates black-and-white visuals with dramatic lighting when feasible. It typically frames subjects with a good amount of head and shoulders. Try to ensure guest consent when possible.
 
 <ImageGrid>
     {portraits.map((img, index) => (
@@ -81,15 +75,7 @@ Displays a decent amount of head and shoulders crop.
 
 ## Activism
 
-This style is primarily used for Network State Press articles and presentations.
-
-Black and white.
-
-Includes journalistic style and stock photography.
-
-Protests, demonstrations.
-
-Free is good, licensed can be used (need to work out details).
+This style is predominantly employed for Network State Press articles and presentations, featuring a black-and-white color scheme. It integrates a journalistic approach with both stock photography and real-life imagery from protests and demonstrations. While a preference is given to free resources, licensed content can also be considered.
 
 <ImageGrid>
     {activismImages.map((img, index) => (
@@ -101,13 +87,7 @@ Free is good, licensed can be used (need to work out details).
 
 ## Conceptual
 
-This style is primarily used for Network State Press articles and presentations.
-
-Includes journalistic style and stock photography.
-
-Relates to core Logos concepts; human rights, privacy, civil liberties, etc.
-
-Free is good, licensed can be used (need to work out details).
+This style is primarily utilized for Network State Press articles and presentations, encompassing a journalistic approach along with the inclusion of stock photography. It is designed to align with fundamental Logos concepts, such as human rights, privacy, and civil liberties. While free resources are preferred, the use of licensed materials can be explored.
 
 <ImageGrid>
     {conceptualImages.map((img, index) => (
