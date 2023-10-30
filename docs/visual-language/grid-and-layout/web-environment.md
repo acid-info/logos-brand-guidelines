@@ -30,7 +30,7 @@ Gutter size - 16px.
 
 ## Examples
 
-### **Desktop**
+### Desktop
 
 ![Untitled](/Untitled-1.png)
 
@@ -40,13 +40,13 @@ Gutter size - 16px.
 
 ![Untitled](/Untitled-4.png)
 
-### **Tablet**
+### Tablet
 
 ![Untitled](/Untitled-5.png)
 
 ![Untitled](/Untitled-6.png)
 
-### **Mobile**
+### Mobile
 
 ![Untitled](/Untitled-7.png)
 

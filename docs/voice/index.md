@@ -30,19 +30,19 @@ Our only steadfast rule is whenever we communicate, we are clear. Use straightfo
 
 ### Tone of voice
 
-**Sincere**
+Sincere
 
 We are clear in our message. We are honest and earnest. We do not hide behind innuendo. We do not inflate for shock value, nor do we couch. We say things as they are. We’re straight-shooters.
 
-**Bold**
+Bold
 
 What we are trying to accomplish puts us at odds with some of the most powerful entities on the planet. Despite that, we communicate with courage. We are confident in our convictions without getting into a flame war or bad-mouthing other projects. We take a stand for things we believe in.
 
-**Optimistic**
+Optimistic
 
 Logos exists to help create a brighter future for all of humanity. Thus, the assumptions are *there will be a future*, and *peace and prosperity are possible*. We are upholding, advancing, and building, not fighting, hindering, or breaking. We do not doompost or brood.
 
-**Serious**
+Serious
 
 On websites and blog posts, and during presentations our tone leans serious and sober. We present ourselves as competent, reliable, and committed.Sometimes we take that down a notch or two on socials.
 

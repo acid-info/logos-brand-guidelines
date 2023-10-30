@@ -4,25 +4,11 @@ const sidebars = {
   main: [
     'index',
     {
-      type: 'category',
+      type: 'doc',
       label: 'Philosophy',
-      collapsible: true,
-      link: {
-        type: 'generated-index',
-      },
-      items: [
-        {
-          type: 'doc',
-          label: 'Overview',
-          id: 'philosophy/overview',
-        },
-        {
-          type: 'doc',
-          label: 'Principles',
-          id: 'philosophy/principles',
-        },
-      ],
+      id: 'philosophy/index',
     },
+    'resources-and-tools/gallery',
     {
       type: 'html',
       value: '<div class="sidebar-menu-divider"></div>',
@@ -178,8 +164,6 @@ const sidebars = {
         },
       ],
     },
-
-    'resources-and-tools/gallery',
   ],
 }
 
