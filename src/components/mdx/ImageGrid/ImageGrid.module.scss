@@ -1,0 +1,19 @@
+@use "@acid-info/logos-docusaurus-theme/lib/client/css/utils";
+
+.imageGrid > div > div {
+  max-height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageGrid img {
+  cursor: pointer;
+  max-height: 300px;
+}
+
+@include utils.responsive('md', 'down') {
+  .imageGrid > div > div {
+    margin-bottom: 16px;
+  }
+}

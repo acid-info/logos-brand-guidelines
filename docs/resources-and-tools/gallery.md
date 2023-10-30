@@ -3,62 +3,46 @@ title: Gallery
 displayed_sidebar: main
 ---
 
+import { ImageGrid, Grid } from "@site/src/components/mdx"
+
 # Gallery
 
 <!-- [Sizzle Reel draft.mp4](Gallery%20e5522cb5bfc94082adac41f1ab17a673/Sizzle_Reel_draft.mp4) -->
 
-![1.png](/1.png)
+export const galleryImages = [
+    { src: '/1.png'},
+    { src: '/2.png'},
+    { src: '/3.png'},
+    { src: '/4.png'},
+    { src: '/6.png'},
+    { src: '/7.png'},
+    { src: '/8.png'},
+    { src: '/9.png'},
+    { src: '/10.png'},
+    { src: '/11.png'},
+    { src: '/12.png'},
+    { src: '/13.png'},
+    { src: '/14.png'},
+    { src: '/15.png'},
+    { src: '/16.png'},
+    { src: '/17.png'},
+    { src: '/18.png'},
+    { src: '/19.png'},
+    { src: '/20.png'},
+    { src: '/21.png'},
+    { src: '/22.png'},
+    { src: '/23.png'},
+    { src: '/24.png'},
+    { src: '/25.png'},
+    { src: '/26.png'},
+    { src: '/27.png'},
+    { src: '/28.png'},
+]
 
-![2.png](/2.png)
-
-![3.png](/3.png)
-
-![4.png](/4.png)
-
-![5.png](/5.png)
-
-![6.png](/6.png)
-
-![7.png](/7.png)
-
-![8.png](/8.png)
-
-![9.png](/9.png)
-
-![10.png](/10.png)
-
-![11.png](/11.png)
-
-![12.png](/12.png)
-
-![13.png](/13.png)
-
-![14.png](/14.png)
-
-![15.png](/15.png)
-
-![16.png](/16.png)
-
-![17.png](/17.png)
-
-![18.png](/18.png)
-
-![19.png](/19.png)
-
-![20.png](/20.png)
-
-![21.png](/21.png)
-
-![22.png](/22.png)
-
-![23.png](/23.png)
-
-![24.png](/24.png)
-
-![25.png](/25.png)
-
-![26.png](/26.png)
-
-![27.png](/27.png)
-
-![28.png](/28.png)
+<ImageGrid>
+    {galleryImages.map((img, index) => (
+        <Grid.Item key={index}>
+            <img src={img.src} />
+        </Grid.Item>
+    ))}
+</ImageGrid>
