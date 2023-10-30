@@ -37,4 +37,4 @@ font-family: Serif
 
 ### [LSD](https://logos-brand-guidelines.vercel.app/category/lsd---ui-library) type stack
 
-![Untitled](/Untitled.png)
+![Untitled](/TypographyWebEnvironment.png)
