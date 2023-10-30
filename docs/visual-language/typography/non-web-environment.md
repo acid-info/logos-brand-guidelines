@@ -25,4 +25,4 @@ We recommend the following free/open-source fonts that meet the above criteria:
 
 ### Logos Podcast type stack
 
-![Untitled](/Untitled.png)
+![Untitled](/TypographyNonWeb1.png)
