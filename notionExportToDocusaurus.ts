@@ -164,12 +164,8 @@ const moveImagesToStatic = (entry: EntryInfo) => {
 }
 
 const mapNotionIdToDocusaurusPage = (notionId: string): string | undefined => {
-    if (notionId === '419bedb2ead6415aba5ef89ec8899362') {
-      return '/philosophy/overview.md'
-    }
-
-    if (notionId === 'ce62ed2988cd4293b3f7eb1f49110c67') {
-      return '/philosophy/principles.md'
+    if (notionId === 'e9f9330417fa4c4db19b32f3ad9c0e14') {
+      return '/philosophy/index.md'
     }
 
     if (notionId === 'dff0a02ce0d8431d8841e97a975844bb') {
