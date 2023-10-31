@@ -9,7 +9,7 @@ export type ImageGridProps = GridProps & {
   children: React.ReactNode
 }
 
-export const ImageGrid: React.FC<ImageGridProps> = ({ children }) => {
+export const ImageGrid: React.FC<ImageGridProps> = ({ children, ...props }) => {
   const handleImageClick = event => {
     // The following code clicks on the lightbox expand button when an image is clicked.
     if (event.target.tagName === 'IMG') {
@@ -28,6 +28,7 @@ export const ImageGrid: React.FC<ImageGridProps> = ({ children }) => {
       md={{ cols: 3, gap: '12px' }}
       className={styles.imageGrid}
       onClick={handleImageClick}
+      {...props}
     >
       {children}
     </Grid>
