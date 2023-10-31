@@ -91,7 +91,7 @@ Nimbus - Aphrodite with halo, lightness, symbol of love, attraction
 
 Waku - Prometheus, delivering transformative technology
 
-<ImageGrid>
+<ImageGrid xs={{cols: 2, gap: "16px"}} md={{cols: 4, gap: "16px"}}>
     {protocolPromotion.map((img, index) => (
         <Grid.Item key={index}>
             <img src={img.src} />
@@ -105,7 +105,7 @@ The selected illustration style is detailed, and symmetrical to suggest the subl
 
 Need to come up with a plan/process for creating/buying/commissioning/using this type of illustration. Could be applicable to Network State Press articles and social promo stuff.
 
-<ImageGrid>
+<ImageGrid xs={{cols: 2, gap: "16px"}} md={{cols: 4, gap: "16px"}}>
     {conceptualImages.map((img, index) => (
         <Grid.Item key={index}>
             <img src={img.src} />
@@ -119,7 +119,7 @@ Texture can be preferable giving a layering or aging effect to the work suggesti
 
 HIO uses these abstracts for the Flash Hash episode covers.
 
-<ImageGrid>
+<ImageGrid xs={{cols: 4, gap: "16px"}} md={{cols: 7, gap: "16px"}}>
     {abstractImages.map((img, index) => (
         <Grid.Item key={index}>
             <img src={img.src} />
