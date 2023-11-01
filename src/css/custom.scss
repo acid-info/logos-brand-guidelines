@@ -8,3 +8,22 @@
 .sidebar-menu-divider {
   margin-top: 8px;
 }
+
+.DocCardList--no-overview {
+  article:first-child {
+    display: none;
+  }
+
+  article a {
+    text-decoration: none;
+  }
+
+  article a:hover {
+    text-decoration: underline;
+  }
+}
+
+.template-card-title {
+  margin-bottom: 24px;
+  margin-top: 40px;
+}

@@ -11,11 +11,11 @@ In non-web and print environments, we suggest using free/open-source fonts or th
 
 We recommend the following free/open-source fonts that meet the above criteria:
 
-| Font Type | Suggested Free/Open-Source Font Family |
+| Font Type | Suggested Default Font Family |
 | --- | --- |
-| Mono | https://fonts.google.com/specimen/Inconsolata?query=inconso, https://fonts.google.com/specimen/Fira+Mono, https://www.jetbrains.com/lp/mono/, https://fonts.google.com/specimen/IBM+Plex+Mono |
-| Serif | https://fonts.google.com/specimen/Lora |
-| Sans-Serif | https://fonts.google.com/specimen/Inter |
+| Mono | [Iconsolata](https://fonts.google.com/specimen/Inconsolata?query=inconso), [Fira Mono](https://fonts.google.com/specimen/Fira+Mono), [JetBrains Mono](https://www.jetbrains.com/lp/mono/), [IBM Plex Mono](https://fonts.google.com/specimen/IBM+Plex+Mono) |
+| Serif | [Lora](https://fonts.google.com/specimen/Lora) |
+| Sans-Serif | [Inter](https://fonts.google.com/specimen/Inter) |
 
 ## Examples
 

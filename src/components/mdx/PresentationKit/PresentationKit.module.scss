@@ -1,0 +1,36 @@
+.root {
+  border: 1px solid rgb(var(--lsd-border-primary));
+  max-width: 390px;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgb(var(--lsd-border-primary));
+  padding: 16px;
+
+  text-decoration: none !important;
+  &:hover {
+    text-decoration: underline !important;
+  }
+
+  svg {
+    flex-shrink: 0;
+  }
+}
+
+.textContainer {
+  padding-left: 16px;
+  overflow: hidden;
+
+  div {
+    max-width: 310px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.subtitle {
+  margin-top: 4px;
+}
