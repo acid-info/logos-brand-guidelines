@@ -152,6 +152,9 @@ const sidebars = {
       type: 'category',
       label: 'Templates',
       collapsible: true,
+      link: {
+        type: 'generated-index',
+      },
       items: [
         {
           type: 'doc',
