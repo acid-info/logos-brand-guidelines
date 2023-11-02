@@ -18,44 +18,16 @@ The typestack for these grids is also based in multiples of 20px, line height ad
 
 2 column 20px and 4 column 20px
 
-<ImageGrid md={{cols: 2, gap: "16px"}}>
-        <Grid.Item>
-            <img src="/Clip_path_group.png" />
-        </Grid.Item>
-        <Grid.Item>
-            <img src="/Logos-Example-2.png" />
-        </Grid.Item>
-</ImageGrid>
+<ImageGrid md={{cols: 2, gap: "16px"}} imageArray={[{src: "/Clip_path_group.png"}, {src: "/Logos-Example-2.png" }]} />
 
 ### Hashing It Out
 
 3 column 20px and 2 column 20px
 
-<ImageGrid md={{cols: 2, gap: "16px"}}>
-        <Grid.Item title="">
-            <img src="/HIO-Examples-1.png" />
-        </Grid.Item>
-        <Grid.Item title="">
-            <img src="/HIO-Examples-2.png" />
-        </Grid.Item>
-</ImageGrid>
-
+<ImageGrid md={{cols: 2, gap: "16px"}} imageArray={[{src: "/HIO-Examples-1.png"}, {src: "/HIO-Examples-2.png"}]} />
 
 ### Generic Twitter
 
 This is a simpler grid based on 96px, used for X. Type sizes are also based on divisions of the 96px unit.
 
-<ImageGrid md={{cols: 2, gap: "16px"}}>
-        <Grid.Item>
-            <img src="/image_5.png" />
-        </Grid.Item>
-        <Grid.Item>
-            <img src="/image_6.png" />
-        </Grid.Item>
-        <Grid.Item>
-            <img src="/image_7.png" />
-        </Grid.Item>
-        <Grid.Item>
-            <img src="/image_8.png" />
-        </Grid.Item>
-</ImageGrid>
+<ImageGrid md={{cols: 2, gap: "16px"}} imageArray={[{src: "/image_5.png"}, {src: "/image_6.png"}, {src: "/image_7.png"}, {src: "/image_8.png"}]} />

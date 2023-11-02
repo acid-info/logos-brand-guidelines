@@ -25,7 +25,7 @@ const EXCLUDE_COMPONENTS = [
 
 const STORYBOOK_URL = process.env.STORYBOOK_URL
 const DOCS_DIR = path.join(DATA_DIR, '../docs')
-const LSD_DOCS_DIR = path.join(DOCS_DIR, './resources-and-tools/lsd')
+const LSD_DOCS_DIR = path.join(DOCS_DIR, './lsd')
 const COMPONENTS_DIR = path.join(LSD_DOCS_DIR, './components')
 const DESIGN_TOKENS_DIR = path.join(LSD_DOCS_DIR, './design-tokens')
 

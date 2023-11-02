@@ -1,19 +1,75 @@
 @use "@acid-info/logos-docusaurus-theme/lib/client/css/utils";
 
-.imageGrid > div > div {
-  max-height: 300px;
+.thumbnailImageContainer {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  overflow: hidden;
+  height: 100%;
 }
 
-.imageGrid img {
+.thumbnailImage {
+  min-height: 100%;
+  min-width: 100%;
+  max-height: none;
+  object-fit: cover;
+
   cursor: pointer;
-  max-height: 300px;
 }
 
+.masonry .thumbnailImageContainer {
+  flex-direction: column;
+  margin-bottom: 16px;
+  height: auto; // overrides the height: 100% from the default thumbnailImageContainer
+}
+
+.squareThumbnails .thumbnailImageContainer {
+  aspect-ratio: 1 / 1;
+}
+
+// Overlay and expanded image styles.
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(var(--lsd-theme-secondary));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.expandedImageContainer {
+  height: 90vh;
+  width: 90vw;
+  overflow: hidden;
+
+  // The following padding top adds a little bit of room for the close button.
+  padding-top: 20px;
+}
+
+.expandedImage {
+  height: 100%;
+  width: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.closeButton {
+  position: fixed;
+  top: 18px;
+  right: 16px;
+
+  cursor: pointer;
+}
+
+// Single column image galleries on mobile don't have spacing between them.
+// The following padding bottom fixes that.
 @include utils.responsive('md', 'down') {
-  .imageGrid > div > div {
-    margin-bottom: 16px;
+  .thumbnailImageContainer {
+    padding-bottom: 16px;
   }
 }
