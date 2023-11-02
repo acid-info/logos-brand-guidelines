@@ -42,18 +42,16 @@
   z-index: 1000;
 }
 
-.expandedImageContainer {
+.expandedImage {
+  position: fixed;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
   height: 90vh;
   width: 90vw;
-  overflow: hidden;
 
-  // The following padding top adds a little bit of room for the close button.
-  padding-top: 20px;
-}
-
-.expandedImage {
-  height: 100%;
-  width: 100%;
   display: block;
   object-fit: contain;
 }
@@ -63,7 +61,11 @@
   top: 18px;
   right: 16px;
 
+  background-color: rgb(var(--lsd-theme-secondary)) !important;
+
   cursor: pointer;
+
+  z-index: 1001;
 }
 
 // Single column image galleries on mobile don't have spacing between them.

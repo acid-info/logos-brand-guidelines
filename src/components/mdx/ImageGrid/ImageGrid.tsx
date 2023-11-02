@@ -108,12 +108,23 @@ export const ImageGrid: React.FC<ImageGridProps> = ({
           />
         ) : (
           imageArray.map((image, index) => (
-            <Grid.Item key={index} className={styles.thumbnailImageContainer}>
+            <Grid.Item
+              key={index}
+              className={
+                selectedImage?.src === image.src
+                  ? styles.overlay
+                  : styles.thumbnailImageContainer
+              }
+            >
               <img
                 src={image.src}
                 alt={image.alt || ''}
                 onClick={() => setSelectedImage(image)}
-                className={styles.thumbnailImage}
+                className={
+                  selectedImage?.src === image.src
+                    ? styles.expandedImage
+                    : styles.thumbnailImage
+                }
               />
             </Grid.Item>
           ))
@@ -121,22 +132,13 @@ export const ImageGrid: React.FC<ImageGridProps> = ({
       </Grid>
 
       {selectedImage && (
-        <div className={styles.overlay}>
-          <div className={styles.expandedImageContainer}>
-            <IconButton
-              size="small"
-              onClick={() => setSelectedImage(null)}
-              className={styles.closeButton}
-            >
-              <CloseIcon color="primary" />
-            </IconButton>
-            <img
-              src={selectedImage.src}
-              alt={selectedImage.alt || ''}
-              className={styles.expandedImage}
-            />
-          </div>
-        </div>
+        <IconButton
+          size="small"
+          onClick={() => setSelectedImage(null)}
+          className={styles.closeButton}
+        >
+          <CloseIcon color="primary" />
+        </IconButton>
       )}
     </>
   )
