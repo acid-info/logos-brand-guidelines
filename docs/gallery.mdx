@@ -39,10 +39,4 @@ export const galleryImages = [
     { src: '/28.png'},
 ]
 
-<ImageGrid md={{cols: 2, gap: "16px"}} xs={{cols: 2, gap: "16px"}}>
-    {galleryImages.map((img, index) => (
-        <Grid.Item key={index}>
-            <img src={img.src} />
-        </Grid.Item>
-    ))}
-</ImageGrid>
+<ImageGrid mode="masonry" firstColumnSize={11} imageArray={galleryImages} />
