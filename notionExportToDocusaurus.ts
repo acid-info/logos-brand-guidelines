@@ -168,17 +168,17 @@ const mapNotionIdToDocusaurusPage = (notionId: string): string | undefined => {
       return '/philosophy/index.md'
     }
 
-    if (notionId === 'dff0a02ce0d8431d8841e97a975844bb') {
-      return 'resources-and-tools/lsd/index.md'
-    }
+    // if (notionId === 'dff0a02ce0d8431d8841e97a975844bb') {
+    //   return 'resources-and-tools/lsd/index.md'
+    // }
 
     // if (notionId === '31ea305ac88342ebbc505ea93e3bca3a') {
     //   return 'resources-and-tools/lsd/design-tokens.md'
     // }
 
-    if (notionId === 'e5522cb5bfc94082adac41f1ab17a673') {
-      return 'resources-and-tools/gallery.md'
-    }
+    // if (notionId === 'e5522cb5bfc94082adac41f1ab17a673') {
+    //   return 'resources-and-tools/gallery.md'
+    // }
 
     if (notionId === '6c4c002d6ead446cb1f58cbb34a7be4c') {
       return 'visual-language/index.md'
