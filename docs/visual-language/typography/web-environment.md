@@ -11,7 +11,7 @@ In our web environments, we lean toward a concept inspired by the decentralized 
 
 By specifying the font category (serif, sans-serif, or mono) in your CSS, the user's operating system is allowed to determine the best font choice. This approach also guarantees extensive language script support.
 
-```css
+```
 /**
  * System font stack for sans-serif fonts
  *
