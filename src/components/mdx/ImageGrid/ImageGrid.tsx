@@ -16,7 +16,8 @@ type MasonryModeProps = {
   setSelectedImage: (image: ImageType | null) => void
   firstColumnSize: number
   imageArray: ImageType[]
-  selectedImage: ImageType | null
+  folder: string
+  thumbnailsFolder: string
 }
 
 // Masonry mode only has 2 columns with 1 item each.
@@ -24,7 +25,8 @@ const MasonryMode: React.FC<MasonryModeProps> = ({
   setSelectedImage,
   firstColumnSize,
   imageArray,
-  selectedImage,
+  folder,
+  thumbnailsFolder,
 }) => {
   const firstColumnImages = imageArray.slice(0, firstColumnSize)
   const secondColumnImages = imageArray.slice(firstColumnSize)
@@ -33,48 +35,26 @@ const MasonryMode: React.FC<MasonryModeProps> = ({
     <>
       <Grid.Item>
         {firstColumnImages.map((image, index) => (
-          <div
-            key={index}
-            className={
-              selectedImage?.src === image.src
-                ? styles.overlay
-                : styles.thumbnailImageContainer
-            }
-          >
+          <div key={index} className={styles.thumbnailImageContainer}>
             <img
               key={index}
-              src={image.src}
+              src={folder + thumbnailsFolder + image.src}
               alt={image.alt || ''}
               onClick={() => setSelectedImage(image)}
-              className={
-                selectedImage?.src === image.src
-                  ? styles.expandedImage
-                  : styles.thumbnailImage
-              }
+              className={styles.thumbnailImage}
             />
           </div>
         ))}
       </Grid.Item>
       <Grid.Item>
         {secondColumnImages.map((image, index) => (
-          <div
-            key={index}
-            className={
-              selectedImage?.src === image.src
-                ? styles.overlay
-                : styles.thumbnailImageContainer
-            }
-          >
+          <div key={index} className={styles.thumbnailImageContainer}>
             <img
               key={index}
-              src={image.src}
+              src={folder + thumbnailsFolder + image.src}
               alt={image.alt || ''}
               onClick={() => setSelectedImage(image)}
-              className={
-                selectedImage?.src === image.src
-                  ? styles.expandedImage
-                  : styles.thumbnailImage
-              }
+              className={styles.thumbnailImage}
             />
           </div>
         ))}
@@ -87,12 +67,16 @@ export type ImageGridProps = GridProps & {
   imageArray: ImageType[]
   mode?: 'masonry' | 'regular' | 'square-thumbnails'
   firstColumnSize?: number
+  folder?: string
+  thumbnailsFolder?: string
 }
 
 export const ImageGrid: React.FC<ImageGridProps> = ({
   mode = 'regular',
   imageArray,
   firstColumnSize = 0, // default value
+  folder = '',
+  thumbnailsFolder = '/thumbnails',
   ...props
 }) => {
   const [selectedImage, setSelectedImage] = useState<null | ImageType>(null)
@@ -110,6 +94,8 @@ export const ImageGrid: React.FC<ImageGridProps> = ({
       document.removeEventListener('keydown', handleKeyDown)
     }
   }, [])
+
+  console.log('Hello!', folder + thumbnailsFolder)
 
   return (
     <>
@@ -129,27 +115,17 @@ export const ImageGrid: React.FC<ImageGridProps> = ({
             setSelectedImage={setSelectedImage}
             firstColumnSize={firstColumnSize}
             imageArray={imageArray}
-            selectedImage={selectedImage}
+            folder={folder}
+            thumbnailsFolder={thumbnailsFolder}
           />
         ) : (
           imageArray.map((image, index) => (
-            <Grid.Item
-              key={index}
-              className={
-                selectedImage?.src === image.src
-                  ? styles.overlay
-                  : styles.thumbnailImageContainer
-              }
-            >
+            <Grid.Item key={index} className={styles.thumbnailImageContainer}>
               <img
-                src={image.src}
+                src={folder + thumbnailsFolder + image.src}
                 alt={image.alt || ''}
                 onClick={() => setSelectedImage(image)}
-                className={
-                  selectedImage?.src === image.src
-                    ? styles.expandedImage
-                    : styles.thumbnailImage
-                }
+                className={styles.thumbnailImage}
               />
             </Grid.Item>
           ))
@@ -157,13 +133,20 @@ export const ImageGrid: React.FC<ImageGridProps> = ({
       </Grid>
 
       {selectedImage && (
-        <IconButton
-          size="small"
-          onClick={() => setSelectedImage(null)}
-          className={styles.closeButton}
-        >
-          <CloseIcon color="primary" />
-        </IconButton>
+        <div className={styles.overlay}>
+          <IconButton
+            size="small"
+            onClick={() => setSelectedImage(null)}
+            className={styles.closeButton}
+          >
+            <CloseIcon color="primary" />
+          </IconButton>
+          <img
+            src={folder + selectedImage.src}
+            alt={selectedImage.alt || ''}
+            className={styles.expandedImage}
+          />
+        </div>
       )}
     </>
   )
