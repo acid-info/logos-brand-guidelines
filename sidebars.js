@@ -52,7 +52,6 @@ const sidebars = {
         //   label: 'Illustration',
         //   id: 'visual-language/illustration',
         // },
-
         {
           type: 'category',
           label: 'Typography',
@@ -76,6 +75,11 @@ const sidebars = {
           ],
         },
         {
+          type: 'doc',
+          label: 'Color',
+          id: 'visual-language/color',
+        },
+        {
           type: 'category',
           label: 'Grid and Layout',
           collapsible: true,
@@ -96,6 +100,17 @@ const sidebars = {
               id: 'visual-language/grid-and-layout/non-web-environment',
             },
           ],
+        },
+
+        {
+          type: 'doc',
+          label: 'Photography',
+          id: 'visual-language/photography',
+        },
+        {
+          type: 'doc',
+          label: 'Illustration',
+          id: 'visual-language/illustration',
         },
       ],
     },
