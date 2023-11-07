@@ -29,18 +29,14 @@ export const CardWithIcon: React.FC<CardWithIconProps> = ({
           {!!icon && <div className={styles.icon}>{icon}</div>}
           <NewPageIcon />
         </div>
-        <Typography
-          className={styles.title}
-          variant="subtitle1"
-          component="div"
-        >
+        <Typography className={styles.title} variant="body1" component="div">
           {title}
         </Typography>
 
         {!!subtitle && (
           <Typography
             className={styles.subtitle}
-            variant="subtitle2"
+            variant="label2"
             component="div"
           >
             {subtitle}

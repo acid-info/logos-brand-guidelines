@@ -67,6 +67,7 @@ export type StorybookDemoProps = {
   storybookUrl: string
   globalTypes: Record<string, GlobalType>
   componentProperties: ComponentProperty[]
+  globalControls?: ('themeFont' | 'themeColor')[]
 }
 
 export const StorybookDemo: React.FC<StorybookDemoProps> = ({
@@ -75,6 +76,7 @@ export const StorybookDemo: React.FC<StorybookDemoProps> = ({
   storyId,
   storybookUrl,
   globalTypes,
+  globalControls,
   componentProperties = [],
 }) => {
   const colorMode = useColorMode()
@@ -115,10 +117,15 @@ export const StorybookDemo: React.FC<StorybookDemoProps> = ({
       'title,subtitle,toolbar' +
         (storyId ? ',description,canvas-border,code' : ''),
     )
-    url.searchParams.set('globalControls', 'true')
+    url.searchParams.set(
+      'globalControls',
+      globalControls && globalControls.length
+        ? globalControls.join(',')
+        : 'false',
+    )
 
     return url.toString()
-  }, [docId, storyId, globalProps, props])
+  }, [docId, storyId, globalProps, globalControls, props])
 
   return (
     <div className={clsx(styles.root, styles[globalProps.themeColor])}>
