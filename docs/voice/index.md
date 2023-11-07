@@ -42,7 +42,7 @@ Optimistic
 
 Logos exists to help create a brighter future for all of humanity. Thus, the assumptions are *there will be a future*, and *peace and prosperity are possible*. We are upholding, advancing, and building, not fighting, hindering, or breaking. We do not doompost or brood.
 
-Serious
+Deliberate
 
 On websites and blog posts, and during presentations our tone leans serious and sober. We present ourselves as competent, reliable, and committed.Sometimes we take that down a notch or two on socials.
 
