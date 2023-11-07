@@ -4,6 +4,43 @@ import clsx from 'clsx'
 import React, { useMemo, useRef, useState } from 'react'
 import styles from './StoryBookDemo.module.scss'
 
+const onIframeLoad = (iframe: HTMLIFrameElement) => {
+  const handleIframeMessage = (event: MessageEvent) => {
+    if (
+      typeof event.data === 'string' &&
+      event.data.includes('storyRendered')
+    ) {
+      // XXX: This if() block executes when storybook has finished rendering.
+      // So if we ever want to implement a loading screen, this if() block may help.
+      requestHeightFromIframe()
+    } else if (event.data && event.data.type === 'iframeHeightResponse') {
+      iframe.style.height = `${event.data.height}px`
+    }
+  }
+
+  // Request height from the iframe
+  const requestHeightFromIframe = () => {
+    if (!iframe || !iframe.contentWindow) {
+      return
+    }
+
+    iframe.contentWindow.postMessage(
+      {
+        type: 'requestHeight',
+      },
+      '*',
+    )
+  }
+
+  window.addEventListener('message', handleIframeMessage)
+
+  // The following setInterval is just a safety mechanism for the very unlikely case
+  // of the iframe not sending a storyRendered message.
+  setInterval(() => {
+    requestHeightFromIframe()
+  }, 1000)
+}
+
 type GlobalType = {
   name: string
   description: string
@@ -124,7 +161,14 @@ export const StorybookDemo: React.FC<StorybookDemoProps> = ({
         ))}
       </div>
       <div className={styles.iframeContainer}>
-        <iframe ref={iframeRef} src={embedUrl} />
+        <iframe
+          ref={iframeRef}
+          src={embedUrl}
+          height={500}
+          onLoad={() => {
+            onIframeLoad(iframeRef.current)
+          }}
+        />
       </div>
     </div>
   )
