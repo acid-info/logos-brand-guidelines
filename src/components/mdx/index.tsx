@@ -7,6 +7,8 @@ export * from './CardWithIcon'
 export * from './Icons/FigmaIcon'
 export * from './Icons/ChromaticIcon'
 export * from './Icons/GoogleSlidesIcon'
+export * from './Icons/NPMIcon'
+export * from './Icons/GithubIcon'
 export * from './LogoCard'
 export * from './PresentationKit'
 

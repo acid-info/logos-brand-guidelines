@@ -4,7 +4,7 @@ displayed_sidebar: main
 pagination_label: LSD - UI Library
 ---
 
-import { CardWithIcon, FigmaIcon, ChromaticIcon, Grid } from '@site/src/components/mdx';
+import { CardWithIcon, FigmaIcon, ChromaticIcon, GithubIcon, NPMIcon, Grid } from '@site/src/components/mdx';
 
 # Overview
 
@@ -29,6 +29,20 @@ LSD is an open-source design system challenging conventional norms in the world 
             subtitle="www.chromatic.com"
             href="https://www.chromatic.com/library?appId=63e4f71c39dc65c5c703c1e8"
             icon={<ChromaticIcon />}/>
+    </Grid.Item>
+    <Grid.Item xs={1}>
+        <CardWithIcon
+            title="Github - LSD"
+            subtitle="www.github.com"
+            href="https://github.com/acid-info/lsd"
+            icon={<GithubIcon />}/>
+    </Grid.Item>
+    <Grid.Item xs={1}>
+        <CardWithIcon
+            title="NPM Package - LSD"
+            subtitle="www.npm.com"
+            href="https://www.npm.com"
+            icon={<NPMIcon />}/>
     </Grid.Item>
 </Grid>
 
