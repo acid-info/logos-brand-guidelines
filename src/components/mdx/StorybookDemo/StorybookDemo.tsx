@@ -76,7 +76,7 @@ export const StorybookDemo: React.FC<StorybookDemoProps> = ({
   storyId,
   storybookUrl,
   globalTypes,
-  globalControls,
+  globalControls = ['themeColor', 'themeFont'],
   componentProperties = [],
 }) => {
   const colorMode = useColorMode()
