@@ -42,16 +42,6 @@ const sidebars = {
           label: 'Color',
           id: 'visual-language/color',
         },
-        // {
-        //   type: 'doc',
-        //   label: 'Photography',
-        //   id: 'visual-language/photography',
-        // },
-        // {
-        //   type: 'doc',
-        //   label: 'Illustration',
-        //   id: 'visual-language/illustration',
-        // },
         {
           type: 'category',
           label: 'Typography',
@@ -101,17 +91,16 @@ const sidebars = {
             },
           ],
         },
-
-        {
-          type: 'doc',
-          label: 'Photography',
-          id: 'visual-language/photography',
-        },
-        {
-          type: 'doc',
-          label: 'Illustration',
-          id: 'visual-language/illustration',
-        },
+        // {
+        //   type: 'doc',
+        //   label: 'Photography',
+        //   id: 'visual-language/photography',
+        // },
+        // {
+        //   type: 'doc',
+        //   label: 'Illustration',
+        //   id: 'visual-language/illustration',
+        // },
       ],
     },
     {
