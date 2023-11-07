@@ -60,6 +60,8 @@ type ComponentProperty = {
   defaultValue?: string
 }
 
+export type GlobalControls = 'themeFont' | 'themeColor'
+
 export type StorybookDemoProps = {
   name: string
   docId: string
@@ -67,7 +69,7 @@ export type StorybookDemoProps = {
   storybookUrl: string
   globalTypes: Record<string, GlobalType>
   componentProperties: ComponentProperty[]
-  globalControls?: ('themeFont' | 'themeColor')[]
+  globalControls?: GlobalControls[]
 }
 
 export const StorybookDemo: React.FC<StorybookDemoProps> = ({
