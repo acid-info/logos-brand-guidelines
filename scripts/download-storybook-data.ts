@@ -3,7 +3,7 @@ import * as fsp from 'fs/promises'
 import fetch from 'node-fetch'
 import * as path from 'path'
 import { URL } from 'url'
-import type { ComponentGridProps } from '../src/components/mdx'
+import type { ComponentGridProps, GlobalControls } from '../src/components/mdx'
 import { DATA_DIR } from './config'
 
 const EXCLUDE_COMPONENTS = [
@@ -28,6 +28,19 @@ const DOCS_DIR = path.join(DATA_DIR, '../docs')
 const LSD_DOCS_DIR = path.join(DOCS_DIR, './lsd')
 const COMPONENTS_DIR = path.join(LSD_DOCS_DIR, './components')
 const DESIGN_TOKENS_DIR = path.join(LSD_DOCS_DIR, './design-tokens')
+
+const getGlobalControls = (story): GlobalControls[] => {
+  if(story.name === 'Colors') {
+    return ["themeColor"]
+  } else if(story.name === 'Typography') {
+    return ["themeFont"]
+  } else if(story.name === 'Spacing') {
+    // On the spacing page, there's no need for a themeColor or themeFont dropdown
+    return []
+  }
+
+  return ["themeColor", "themeFont"]
+}
 
 const generateDocs = async (metadata: any) => {
   const componentsDir = path.join(DATA_DIR, './components')
@@ -76,6 +89,8 @@ const generateDocs = async (metadata: any) => {
     const stories = themeProvider.stories.filter(story => story !== root)
     for (const story of stories) {
       let doc = ''
+      const globalControls = getGlobalControls(story)
+      const globalControlsString = JSON.stringify(globalControls)
 
       doc += `---\ntitle: ${story.name}\n---\n\n`
       doc += `import { StorybookDemo } from '@site/src/components/mdx/StorybookDemo';\n\n`
@@ -85,7 +100,7 @@ const generateDocs = async (metadata: any) => {
         '--docs',
       )}" storybookUrl="${STORYBOOK_URL}" storyId="${
         story.id
-      }" globalTypes={{}} componentProperties={[]} />\n`
+      }" globalTypes={{}} componentProperties={[]} globalControls={${globalControlsString}}/>\n`
 
       await fsp.writeFile(path.join(designTokensDir, `${story.name}.mdx`), doc)
     }
