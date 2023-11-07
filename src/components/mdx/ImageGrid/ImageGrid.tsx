@@ -95,8 +95,6 @@ export const ImageGrid: React.FC<ImageGridProps> = ({
     }
   }, [])
 
-  console.log('Hello!', folder + thumbnailsFolder)
-
   return (
     <>
       <Grid
