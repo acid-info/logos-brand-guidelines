@@ -52,6 +52,18 @@ const config = {
       }),
     ],
   ],
+  plugins: [
+    [
+      '@docusaurus/plugin-ideal-image',
+      {
+        quality: 100,
+        max: 1080,
+        min: 400,
+        steps: 2,
+        disableInDev: false,
+      },
+    ],
+  ],
 
   themeConfig:
     /** @type {import('@acid-info/logos-docusaurus-preset').ThemeConfig} */

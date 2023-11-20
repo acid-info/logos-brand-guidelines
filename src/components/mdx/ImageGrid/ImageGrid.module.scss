@@ -5,17 +5,13 @@
   justify-content: center;
   align-items: center;
 
-  overflow: hidden;
   height: 100%;
 }
 
 .thumbnailImage {
-  min-height: 100%;
-  min-width: 100%;
-  max-height: none;
+  width: 100%;
+  height: auto;
   object-fit: cover;
-
-  cursor: pointer;
 }
 
 .masonry .thumbnailImageContainer {
@@ -42,20 +38,6 @@
   justify-content: center;
   align-items: center;
   z-index: 10000;
-}
-
-.expandedImage {
-  position: fixed;
-
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  max-height: 90vh;
-  max-width: 90vw;
-
-  display: block;
-  object-fit: contain;
 }
 
 .closeButton {
