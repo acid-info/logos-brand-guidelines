@@ -19,14 +19,14 @@
     satori "^0.10.1"
     sharp "^0.32.1"
 
-"@acid-info/logos-docusaurus-preset@^1.0.0-alpha.119":
-  version "1.0.0-alpha.119"
-  resolved "https://registry.yarnpkg.com/@acid-info/logos-docusaurus-preset/-/logos-docusaurus-preset-1.0.0-alpha.119.tgz#877fffb3d662a082a412836c2e99b90b68b07626"
-  integrity sha512-rN7OlyYGCGVphm7+ivtaQdDQVw9CppPnAzLUfJLSub878gbD2N1rSzbhwLXCQKc7yP7gsmyuMbq4nEFgTOQihA==
+"@acid-info/logos-docusaurus-preset@^1.0.0-alpha.120":
+  version "1.0.0-alpha.120"
+  resolved "https://registry.yarnpkg.com/@acid-info/logos-docusaurus-preset/-/logos-docusaurus-preset-1.0.0-alpha.120.tgz#bcc51b5e5dd715f6de5b81b9771242eaf8284760"
+  integrity sha512-FoT1iYLBiwjHibA20neyW8Swxj6h4lzD+HKRdMB7ry8IR/iy718NKV0dynnDTf6jUm5KzCvpOl0NrpIBbRpgqQ==
   dependencies:
     "@acid-info/docusaurus-og" "^1.0.0-alpha.111"
     "@acid-info/logos-docusaurus-search-local" "^1.0.0-alpha.111"
-    "@acid-info/logos-docusaurus-theme" "^1.0.0-alpha.119"
+    "@acid-info/logos-docusaurus-theme" "^1.0.0-alpha.120"
     "@docusaurus/core" "^2.4.1"
     "@docusaurus/module-type-aliases" "^2.4.1"
     "@docusaurus/preset-classic" "^2.4.1"
@@ -54,10 +54,10 @@
     "@easyops-cn/docusaurus-search-local" "^0.33.6"
     lodash "^4.17.21"
 
-"@acid-info/logos-docusaurus-theme@^1.0.0-alpha.119":
-  version "1.0.0-alpha.119"
-  resolved "https://registry.yarnpkg.com/@acid-info/logos-docusaurus-theme/-/logos-docusaurus-theme-1.0.0-alpha.119.tgz#6c911305979eae077ef29747a0542a8f63df663d"
-  integrity sha512-hlQwQWtPvJOnauhhOgdMT75oR0ZjftEU36LTnz15bg23ciINflEHaMSUrOzWEYjTMydPlg0rD4bQZ4Ifimk+IQ==
+"@acid-info/logos-docusaurus-theme@^1.0.0-alpha.120":
+  version "1.0.0-alpha.120"
+  resolved "https://registry.yarnpkg.com/@acid-info/logos-docusaurus-theme/-/logos-docusaurus-theme-1.0.0-alpha.120.tgz#0a67a9d2cd6bbcf3a914b4d07de3f2b2864ff816"
+  integrity sha512-8Dor7REYhmGmSi0GHpbCImRGfQQKkD/u6u2ZUxwIF/TGNIxfOe2K0RczISVSR0oH+YjxVvfNuL8ctkRHCt4Xng==
   dependencies:
     "@acid-info/docusaurus-og" "^1.0.0-alpha.111"
     "@acid-info/lsd-react" "^0.1.0-alpha.21"
@@ -2652,7 +2652,7 @@
     sitemap "^7.1.1"
     tslib "^2.4.0"
 
-"@docusaurus/preset-classic@2.4.1", "@docusaurus/preset-classic@^2.4.1":
+"@docusaurus/preset-classic@^2.4.1":
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/@docusaurus/preset-classic/-/preset-classic-2.4.1.tgz#072f22d0332588e9c5f512d4bded8d7c99f91497"
   integrity sha512-P4//+I4zDqQJ+UDgoFrjIFaQ1MeS9UD1cvxVQaI6O7iBmiHQm0MGROP1TbE7HlxlDPXFJjZUK3x3cAoK63smGQ==
@@ -2739,7 +2739,7 @@
     use-sync-external-store "^1.2.0"
     utility-types "^3.10.0"
 
-"@docusaurus/theme-mermaid@2.4.1", "@docusaurus/theme-mermaid@^2.4.1":
+"@docusaurus/theme-mermaid@^2.4.1":
   version "2.4.1"
   resolved "https://registry.yarnpkg.com/@docusaurus/theme-mermaid/-/theme-mermaid-2.4.1.tgz#6bf644f9f7ef3db0e938b484f510d6d80d601419"
   integrity sha512-cM0ImKIqZfjmlaC+uAjep39kNBvb1bjz429QBHGs32maob4+UnRzVPPpCUCltyPVb4xjG5h1Tyq4pHzhtIikqA==
