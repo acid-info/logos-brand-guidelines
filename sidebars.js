@@ -65,11 +65,6 @@ const sidebars = {
           ],
         },
         {
-          type: 'doc',
-          label: 'Color',
-          id: 'visual-language/color',
-        },
-        {
           type: 'category',
           label: 'Grid and Layout',
           collapsible: true,
