@@ -65,6 +65,49 @@ const config = {
     ],
   ],
 
+  themes: [
+    [
+      '@acid-info/logos-docusaurus-brand-guidelines-theme',
+      /** @type {import('@acid-info/logos-docusaurus-brand-guidelines-theme').ThemeOptions} */
+      ({
+        customCss: [],
+        lsdDocs: {
+          storybookUrl: process.env.STORYBOOK_URL,
+          componentsDirectory: 'docs/lsd/components',
+          designTokensDirectory: 'docs/lsd/design-tokens',
+          componentConfig: {
+            Colors: {
+              globalProps: ['themeColor'],
+            },
+            Typography: {
+              globalProps: ['themeFont'],
+            },
+            Spacing: {
+              globalProps: [],
+            },
+          },
+          excludeComponents: [
+            'BreadcrumbItem',
+            'CardBody',
+            'CardHeader',
+            'CollapseHeader',
+            'DropdownItem',
+            'ModalBody',
+            'ModalFooter',
+            'TabItem',
+            'TableItem',
+            'TableRow',
+            'Calendar',
+            'TableBody',
+            'TableHeader',
+            'TooltipBase',
+          ],
+          staticDirectory: 'lsd',
+        },
+      }),
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@acid-info/logos-docusaurus-preset').ThemeConfig} */
     ({

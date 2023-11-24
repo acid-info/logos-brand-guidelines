@@ -1,5 +1,6 @@
 ---
 title: Non-web environments
+sidebar_position: 2
 ---
 
 # Non-web environments

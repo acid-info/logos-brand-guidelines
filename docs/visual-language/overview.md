@@ -1,7 +1,6 @@
 ---
-title: Visual Language
-sidebar_position: 1
-displayed_sidebar: main
+title: Overview 
+sidebar_position: 0
 ---
 
 # Overview

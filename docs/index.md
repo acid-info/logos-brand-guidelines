@@ -1,6 +1,7 @@
 ---
 title: Brand Guidelines
 displayed_sidebar: main
+sidebar_position: 0
 ---
 
 # Brand guidelines

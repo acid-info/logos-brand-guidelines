@@ -2,6 +2,7 @@
 title: Voice
 displayed_sidebar: main
 pagination_label: Voice
+sidebar_position: 3
 ---
 
 ## Overview

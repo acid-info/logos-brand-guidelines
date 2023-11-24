@@ -6,19 +6,16 @@
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",
-    "prestart": "yarn run script:download-data",
-    "prebuild": "yarn run script:download-data",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
-    "typecheck": "tsc",
-    "script": "node -r dotenv/config -r tsconfig-paths/register -r ts-node/register scripts/",
-    "script:download-data": "yarn run script ./scripts/download-storybook-data.ts"
+    "typecheck": "tsc"
   },
   "dependencies": {
+    "@acid-info/logos-docusaurus-brand-guidelines-theme": "^1.0.0-alpha.123",
     "@acid-info/logos-docusaurus-preset": "^1.0.0-alpha.121",
     "@docusaurus/plugin-ideal-image": "2.4.1",
     "@emotion/react": "^11.11.0",
