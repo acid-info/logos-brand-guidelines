@@ -1,13 +1,13 @@
 ---
-title: Non-web environments
+title: Non-Web Environments
 sidebar_position: 2
 ---
 
-# Non-web environments
+# Non-Web Environments
 
 In non-web and print environments, we suggest using free/open-source fonts or the default fonts provided by the most common operating systems and devices. These fonts should follow the following criteria:
 
-- Be close to the default fonts already provided on the most common operating systems and devices, to ensure consistency and ease of access.
+- Be close to the default fonts already provided on the most common operating systems and devices to ensure consistency and ease of access.
 - Have an extensive character set to support various languages and scripts.
 
 We recommend the following free/open-source fonts that meet the above criteria:
