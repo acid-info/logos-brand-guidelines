@@ -1,0 +1,15 @@
+{
+    "timestamp": "2024-07-17T07:23:12Z",
+    "git": {
+        "commit": "ba643fb3e9b3e18243332d1af1c3c62403015938",
+        "branch": "origin/master",
+        "url": "git@github.com:acid-info/guide.logos.co.git"
+    },
+    "build": {
+        "id": "13",
+        "number": "13",
+        "name": "website/guide.logos.co",
+        "slave": "linux-02",
+        "url": "https://ci.infra.status.im/job/website/job/guide.logos.co/13/"
+    }
+}
